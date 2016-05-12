@@ -8,7 +8,205 @@ body {
 
 .pi {
     position: absolute;
+    margin-top: -30%;@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+body {
+    overflow: hidden;
+}
+
+.pi {
+    position: absolute;
     margin-top: -30%;
+    width: 20%;
+    max-height: 500px;
+    min-height: 60px;
+    display: none;
+    opacity: 0;
+}
+
+.lci {
+    width: 30vw;
+    margin-left: 4vw;
+}
+
+h2 {
+  position: relative;
+}
+
+.pt {
+  margin-top: -2.6vw;
+  position: absolute;
+  right: 0;
+  margin-right: 4vw;
+  font-size: 1.45vw;
+}
+
+.tk {
+  margin-top: -2.6vw;
+  position: absolute;
+  left: 0;
+  margin-left: 4vw;
+  font-size: 1.45vw;
+}
+
+body {
+  background: #FF0000;
+  background: -webkit-linear-gradient(#FF0000, #7f0000);
+  background: -o-linear-gradient(#FF0000, #7f0000);
+  background: -moz-linear-gradient(#FF0000, #7f0000);
+  background: linear-gradient(#FF0000, #7f0000);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title {
+  margin-top: -1vw;
+  font-size: 3vw;
+  text-align: center;
+  font-family: "Sigmar One";
+}
+
+.title2 {
+  margin-top: -3.9vw;
+  font-size: 3vw;
+  text-align: center;
+  font-family: "Dancing Script";
+}
+
+.inBoxText {
+  color: rgb(200,255,200);
+  font-family: "Arial";
+  font-size: 1.25vw;
+  margin-top: 15px;
+}
+
+.inBoxTextSpan {
+  color: rgb(200,255,200);
+  font-family: "Arial";
+  font-size: 1.25vw;
+  margin-top: 15px;
+}
+
+.inBoxTitle {
+  color: rgb(255,100,100);
+  font-family: "Arial";
+  font-size: 1.55vw;
+  margin-top: 20px;
+}
+
+.inBoxTitleS {
+  color: rgb(255,100,100);
+  font-family: "Arial";
+  font-size: 1.55vw;
+  margin-top: 50.5px;
+}
+
+.inputBox {
+  width: 91.47vw;
+  height: 0.9vw;
+  font-size: 0.9vw;
+  font-family: "Arial";
+  left: 3.65vw;
+  top: 27.9vw;
+  position: absolute;
+  color: #C8C8C8;
+}
+
+.textBoxP {
+    margin-top: -3.9vw;
+    overflow: hidden;
+}
+
+.textBox {
+  overflow: auto;
+  background-color: black;
+  margin-top: 3.9vw;
+  min-height: 20vw;
+  max-height: 20vw;
+  width: 91.47vw;
+  position: relative;
+  margin-left: 3.65vw;
+}
+
+.cr {
+    position: absolute;
+    color: black;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+    top: 29vw;
+    left: 35vw;
+    visibility: hidden;
+}
+
+.choiceOne {
+    position: absolute;
+    background-color: black;
+    font-family: "Arial";
+    color: rgb(200,255,200);
+    border-radius: 0.5vw;
+    font-size: 0.65vw;
+    top: 34vw;
+    left: 35vw;
+    transition: background-color 1s;
+}
+
+.choiceTwo {
+    position: absolute;
+    background-color: black;
+    font-family: "Arial";
+    color: rgb(200,255,200);
+    border-radius: 0.5vw;
+    font-size: 0.65vw;
+    top: 39vw;
+    left: 35vw;
+    transition: background-color 1s;
+}
+
+.choiceThree {
+    position: absolute;
+    background-color: black;
+    font-family: "Arial";
+    color: rgb(200,255,200);
+    border-radius: 0.5vw;
+    font-size: 0.65vw;
+    top: 44vw;
+    left: 35vw;
+    transition: background-color 1s;
+}
+
+.choiceOne:hover {
+    position: absolute;
+    background-color: red;
+    border-radius: 0.5vw;
+    font-size: 0.65vw;
+    top: 34vw;
+    left: 35vw;
+}
+
+.choiceTwo:hover {
+    position: absolute;
+    background-color: red;
+    border-radius: 0.5vw;
+    font-size: 0.65vw;
+    top: 39vw;
+    left: 35vw;
+}
+
+.choiceThree:hover {
+    position: absolute;
+    background-color: red;
+    border-radius: 0.5vw;
+    font-size: 0.65vw;
+    top: 44vw;
+    left: 35vw;
+}
+
+.choicesHolder {
+    visibility: visible;
+}
+
     width: 20%;
     max-height: 500px;
     min-height: 60px;
