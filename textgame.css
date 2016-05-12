@@ -68,21 +68,21 @@ body {
 .inBoxText {
   color: rgb(200,255,200);
   font-family: "Arial";
-  font-size: 0.9vw;
+  font-size: 1.1vw;
   margin-top: 15px;
 }
 
 .inBoxTextSpan {
   color: rgb(200,255,200);
   font-family: "Arial";
-  font-size: 0.9vw;
+  font-size: 1.1vw;
   margin-top: 15px;
 }
 
 .inBoxTitle {
   color: rgb(255,100,100);
   font-family: "Arial";
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   margin-top: 20px;
 }
 
