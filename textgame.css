@@ -19,7 +19,7 @@ body {
 .lci {
     position: absolute;
     width: 30vw;
-    margin-left: 47vw;
+    margin-left: 65.7vw;
     margin-top: -40vw;
 }
 
@@ -95,7 +95,7 @@ body {
 }
 
 .inputBox {
-  width: 42.3555555555vw;
+  width: 61.339vw;
   height: 0.9vw;
   font-size: 0.9vw;
   font-family: "Arial";
@@ -115,7 +115,7 @@ body {
   background-color: black;
   margin-top: 3.9vw;
   height: 40vw;
-  width: 42.5vw;
+  width: 61.5vw;
   position: relative;
   margin-left: 3.65vw;
 }
@@ -126,7 +126,7 @@ body {
     border-radius: 0.5vw;
     font-size: 1.5vw;
     top: 29vw;
-    left: 35vw;
+    left: 66vw;
     visibility: hidden;
 }
 
@@ -138,7 +138,7 @@ body {
     border-radius: 0.5vw;
     font-size: 0.65vw;
     top: 34vw;
-    left: 35vw;
+    left: 66vw;
     transition: background-color 1s;
 }
 
@@ -150,7 +150,7 @@ body {
     border-radius: 0.5vw;
     font-size: 0.65vw;
     top: 39vw;
-    left: 35vw;
+    left: 66vw;
     transition: background-color 1s;
 }
 
@@ -162,7 +162,7 @@ body {
     border-radius: 0.5vw;
     font-size: 0.65vw;
     top: 44vw;
-    left: 35vw;
+    left: 66vw;
     transition: background-color 1s;
 }
 
@@ -172,7 +172,7 @@ body {
     border-radius: 0.5vw;
     font-size: 0.65vw;
     top: 34vw;
-    left: 35vw;
+    left: 66vw;
 }
 
 .choiceTwo:hover {
@@ -181,7 +181,7 @@ body {
     border-radius: 0.5vw;
     font-size: 0.65vw;
     top: 39vw;
-    left: 35vw;
+    left: 66vw;
 }
 
 .choiceThree:hover {
@@ -190,7 +190,7 @@ body {
     border-radius: 0.5vw;
     font-size: 0.65vw;
     top: 44vw;
-    left: 35vw;
+    left: 66vw;
 }
 
 .choicesHolder {
