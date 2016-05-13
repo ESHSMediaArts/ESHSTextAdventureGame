@@ -17,8 +17,10 @@ body {
 }
 
 .lci {
+    position: absolute;
     width: 30vw;
-    margin-left: 4vw;
+    margin-left: 47vw;
+    margin-top: -40vw;
 }
 
 h2 {
@@ -26,7 +28,7 @@ h2 {
 }
 
 .pt {
-  margin-top: -2.6vw;
+  margin-top: -3.9vw;
   position: absolute;
   right: 0;
   margin-right: 4vw;
@@ -34,7 +36,7 @@ h2 {
 }
 
 .tk {
-  margin-top: -2.6vw;
+  margin-top: -3.9vw;
   position: absolute;
   left: 0;
   margin-left: 4vw;
@@ -76,7 +78,6 @@ body {
   color: rgb(200,255,200);
   font-family: "Arial";
   font-size: 1.25vw;
-  margin-top: 15px;
 }
 
 .inBoxTitle {
@@ -94,18 +95,18 @@ body {
 }
 
 .inputBox {
-  width: 91.47vw;
+  width: 42.3555555555vw;
   height: 0.9vw;
   font-size: 0.9vw;
   font-family: "Arial";
-  left: 3.65vw;
-  top: 27.9vw;
+  left: 3.9vw;
+  top: 46.3vw;
   position: absolute;
   color: #C8C8C8;
 }
 
 .textBoxP {
-    margin-top: -3.9vw;
+    margin-top: -5.5vw;
     overflow: hidden;
 }
 
@@ -113,9 +114,8 @@ body {
   overflow: auto;
   background-color: black;
   margin-top: 3.9vw;
-  min-height: 20vw;
-  max-height: 20vw;
-  width: 91.47vw;
+  height: 40vw;
+  width: 42.5vw;
   position: relative;
   margin-left: 3.65vw;
 }
