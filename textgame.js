@@ -71,7 +71,7 @@ var locations = {};
 
 
 
-locations["TheCircle"] = {locationID: "000", NE: "000", NW: "000", SE: "000", SW: "001", N: "001", E: "003", W: "000", S: "001.1", U: "000.1", D: "000", title: "CIRCLE", desc: "You are standing upon a concrete platform in the center of a gravel circle filled with a number of large trees. This gravel circle is surrounded by  a low brick wall and lies within a large park. To the south there is a volleyball court and past it there are some basketball hoops. To the north there is a soccer field.  To the west you can reach Adams street and to the east you can see the facade of East Side High School.", img: "http://i.imgur.com/40tJ3m7.png", width: "30vw", look: "none"};
+locations["TheCircle"] = {locationID: "000", NE: "000", NW: "000", SE: "000", SW: "000", N: "001", E: "003", W: "000", S: "001.1", U: "000.1", D: "000", title: "CIRCLE", desc: "You are standing upon a concrete platform in the center of a gravel circle filled with a number of large trees. This gravel circle is surrounded by  a low brick wall and lies within a large park. To the south there is a volleyball court and past it there are some basketball hoops. To the north there is a soccer field.  To the west you can reach Adams street and to the east you can see the facade of East Side High School.", img: "http://i.imgur.com/40tJ3m7.png", width: "30vw", look: "none", WN: "Going west would lead you out of the park and onto Adams Street and away from East Side High School. After careful consideration you decide to stick around and visit East Side High."};
 
 
 
@@ -83,19 +83,19 @@ locations["holeStorage"] = {locationID: "-0-0", NE: "", NW: "", SE: "", SW: "", 
 locations["oldBatCave"] = {locationID: "7-2", NE: "", NW: "", SE: "", SW: "", N: "", E: "", W: "", S: "-0-0", U: "", D: "", title: "The darker hole...", desc: "There is a old man in here..?", width: "30vw", look: "none"};
 
 
-locations["SoccerField"] = {locationID: "001", NE: "001", NW: "001", SE: "001", SW: "001", N: "001.2", E: "004", W: "001", S: "000", U: "001", D: "001", title: "SOCCER FIELD", desc: "You are standing on the sidelines of a soccer field. There are no games currently being played.", img: "http://i.imgur.com/SPY8pCJ.jpg", width: "30vw", look: "none"};
+locations["SoccerField"] = {locationID: "001", NE: "001", NW: "001", SE: "001", SW: "001", N: "001.2", E: "004", W: "001", S: "000", U: "001", D: "001", title: "SOCCER FIELD", desc: "You are standing on the sidelines of a soccer field. There are no games currently being played.", img: "http://i.imgur.com/SPY8pCJ.jpg", width: "30vw", look: "none", WN: "Going west would lead you out of the park and onto Adams Street and away from East Side High School. After careful consideration you decide to stick around and visit East Side High."};
 
 
-locations["VolleyBallCourts"] = {locationID: "001.1", NE: "001.1", NW: "001.1", SE: "001.1", SW: "001.1", N: "000", E: "001.1", W: "001.1", S: "002", U: "001.1", D: "001.1", title: "VOLLEYBALL COURT", desc: "You are standing on the edge of a paved volleyball court. There are a number of local Ironbound residents playing a pick-up game.", width: "30vw", img: "http://i.imgur.com/geOstXb.png", look: "none"};
+locations["VolleyBallCourts"] = {locationID: "001.1", NE: "001.1", NW: "001.1", SE: "001.1", SW: "001.1", N: "000", E: "001.1", W: "001.1", S: "002", U: "001.1", D: "001.1", title: "VOLLEYBALL COURT", desc: "You are standing on the edge of a paved volleyball court. There are a number of local Ironbound residents playing a pick-up game.", width: "30vw", img: "http://i.imgur.com/geOstXb.png", look: "none", WN: "Going west would lead you out of the park and onto Adams Street and away from East Side High School. After careful consideration you decide to stick around and visit East Side High."};
 
 
-locations["SoftballField"] = {locationID: "001.2", NE: "001.2", NW: "001.2", SE: "001.2", SW: "001.2", N: "001.2", E: "001.2", W: "001.2", S: "001", U: "001.2", D: "001.2", title: "SOFTBALL FIELD", desc: "On the other side of a tall fence, the East Side Softball team is practicing for their game against Shabazz tomorrow.", img: "http://i.imgur.com/cQnjSzF.png", width: "30vw", look: "none"};
+locations["SoftballField"] = {locationID: "001.2", NE: "001.2", NW: "001.2", SE: "001.2", SW: "001.2", N: "001.2", E: "001.2", W: "001.2", S: "001", U: "001.2", D: "001.2", title: "SOFTBALL FIELD", desc: "On the other side of a tall fence, the East Side Softball team is practicing for their game against Shabazz tomorrow.", img: "http://i.imgur.com/cQnjSzF.png", width: "30vw", look: "none", WN: "Going west would lead you out of the park and onto Adams Street and away from East Side High School. After careful consideration you decide to stick around and visit East Side High."};
 
 
 locations["DeosHotDog"] = {locationID: "004.1", NE: "004.1", NW: "004.1", SE: "004", SW: "004.1", N: "004.1", E: "004", W: "004.1", S: "004", U: "004.1", D: "004.1", title: "DEO'S HOT DOG TRUCK", desc: "You are standing at the side of Deo’s Hotdog truck. The aroma of frankfurters and french fries wafts through the air. Through the order window, you can see Angel, the hotdog guy, diligently preparing food. Next to the order window an extensive menu is hung.", img: "http://i.imgur.com/ILetwUh.jpg", width: "30vw", look: "none", NN: "You walk farther north on Van Buren until you hit Walnut Street. You don’t want your visit to East Side High School to end so you turn around and head back."};
 
 
-locations["BasketBallCourts"] = {locationID: "002", NE: "002", NW: "002", SE: "002", SW: "002", N: "001.1", E: "002", W: "002", S: "002", U: "002", D: "002", title: "BASKETBALL COURT", desc: "There are a few Ann Street school students playing a game of H-O-R-S-E.", width: "30vw", img: "http://i.imgur.com/H3DbZj6.png", look: "none", EN: "An iron gate blocks your way out of the park."};
+locations["BasketBallCourts"] = {locationID: "002", NE: "002", NW: "002", SE: "002", SW: "002", N: "001.1", E: "002", W: "002", S: "002", U: "002", D: "002", title: "BASKETBALL COURT", desc: "There are a few Ann Street school students playing a game of H-O-R-S-E.", width: "30vw", img: "http://i.imgur.com/H3DbZj6.png", look: "none", EN: "An iron gate blocks your way out of the park.", WN: "Going west would lead you out of the park and onto Adams Street and away from East Side High School. After careful consideration you decide to stick around and visit East Side High."};
 
 
 locations["VanBurenSt"] = {locationID: "003", NE: "003", NW: "003", SE: "003", SW: "003", N: "004", E: "006", W: "000", S: "005", U: "003", D: "003", title: "VAN BUREN STREET", desc: "After carefully crossing the street you are standing on the sidewalk in front of East Side High School. There are a number of red doors that give access to the building. To the west there is a large sign indicating the entrance to Independence Park.", img: "http://i.imgur.com/KwxUVNn.png", width: "30vw", look: "none"};
@@ -123,11 +123,11 @@ locations["Alley"] = {locationID: "005.2", NE: "005.2", NW: "005.2", SE: "005.2"
 locations["lobbyFoyer"] = {locationID: "006", NE: "006", NW: "006", SE: "006", SW: "006", N: "006", E: "007", W: "003", S: "006", U: "006", D: "006", title: "LOBBY FOYER", desc: "You are standing in a small vestibule between two sets of red door that give entrance into East Side High School. There is a large mural of a torch on the north wall and there is a ticket window set in the south wall.", img: "http://i.imgur.com/FmEDwsl.jpg", width: "30vw", look: "none"};
 
 
-locations["westLobby"] = {locationID: "007", NE: "007", NW: "007", SE: "007.5", SW: "007", N: "007", E: "008", W: "006", S: "009.1", U: "007", D: "007", title: "MAIN LOBBY", desc: "You are at the western end of East Side High School’s main lobby. Sitting attentively at the front desk is a security guard. There is a large painted plywood sculpture prominently standing next to the desk.", width: "30vw", img: "http://i.imgur.com/Y8b5TCO.jpg", look: "none"};
+locations["westLobby"] = {locationID: "007", NE: "007", NW: "007", SE: "007.5", SW: "007", N: "007", E: "008", W: "006", S: "009.1", U: "007", D: "007", title: "MAIN LOBBY", desc: "You are at the western end of East Side High School’s main lobby. Sitting attentively at the front desk is a security guard. There is a large painted plywood sculpture prominently standing next to the desk. The security guard eyes you carefully.", width: "30vw", img: "http://i.imgur.com/Y8b5TCO.jpg", look: "none"};
 
 locations["alleyVesibule"] = {locationID: "007.5", NE: "008", NW: "007", SE: "007.5", SW: "007.5", N: "007.5", E: "007.5", W: "007.5", S: "005.2", U: "007.5", D: "007.5", title: "Alley Vestibule", desc: "This is a small area south of the main lobby. To the west there is are elevator doors, to the south is an exit to an alley and to the east there are stairs.", width: "30vw", img: "http://i.imgur.com/GnFkzMJ.jpg", look: "none"};
 
-locations["eastLobby"] = {locationID: "008", NE: "008", NW: "008", SE: "008", SW: "007.5", N: "008", E: "022.1", W: "007", S: "008", U: "008", D: "008", title: "MAIN LOBBY", desc: "You are at the eastern end of the main lobby. There is a seating area here with chairs arranged rectangularly and an octagonal table in the center. On the south wall there is a trophy case and three fish tanks. Hanging from a pillar there is a screen with digital signage showing information about school events. A bank red doors lead outside to the north. To the east a hallway continues into the building and to the southwest there is a small vestibule with stairs, an elevator and an exit. ", width: "30vw", img: "http://i.imgur.com/wlcS9Pp.jpg", look: "none"};
+locations["eastLobby"] = {locationID: "008", NE: "008", NW: "008", SE: "008", SW: "007.5", N: "008", E: "022.1", W: "007", S: "008", U: "008", D: "008", title: "MAIN LOBBY", desc: "You are at the eastern end of the main lobby. There is a seating area here with chairs arranged rectangularly and an octagonal table in the center. On the south wall there is a trophy case and three fish tanks. Hanging from a pillar there is a screen with digital signage showing information about school events. A bank red doors lead outside to the north. To the east a hallway continues into the building and to the southwest there is a small vestibule with stairs, an elevator and an exit.", width: "30vw", img: "http://i.imgur.com/wlcS9Pp.jpg", look: "none"};
 
 locations["audWest"] = {locationID: "022.1", NE: "022.1", NW: "022.1", SE: "022.1", SW: "022.1", N: "022.1", E: "022.2", W: "008", S: "022.1", U: "022.1", D: "022.1", title: "Auditorium Hallway", desc: "", width: "30vw", img: "http://i.imgur.com/wlcS9Pp.jpg", look: "none"};
 
@@ -246,25 +246,34 @@ talkCharacters["dummy"] = {
 
 
 talkCharacters["mrRamos"] = {
-    locationID: "VOIDER",
+    locationID: "007",
     
-    name: "dummy", 
+    name: "mr ramos",
+    name2: "mr",
+    name3: "ramos",
     
     talking: "false", 
     
-    start: '<div class="choiceOne" id="a"><h1>1. Hello</h1></div><div class="choiceTwo" id="b"><h1>2. Goodbye</h1></div><div class="choiceThree" id="c"><h1>3. ~DANCE~</h1></div>', 
+    start: '<div class="choiceOne" id="a"><h1>1. I am a new student.</h1></div><div class="choiceTwo" id="b"><h1>2. I am here to see the basketball game.</h1></div><div class="choiceThree" id="c"><h1>3. Just passing through.</h1></div>', 
     
-    startOpen: '',
+    startOpen: 'How may I help you?',
     
     StartImg: 'http://i.imgur.com/6yiBSzI.jpg',
     
     a:' ', 
-    b:' ',
+    b:'<div class="choiceOne" id="ba"><h1>1. I don’t have a ticket. Where can I get one?</h1></div><div class="choiceTwo" id="a"><h1>2.</h1></div><div class="choiceThree" id="a"><h1>3.</h1></div>',
     c:' ',
     
-    aOpen: '', 
-    bOpen: '', 
+    ba:' ',
+    
+    aOpen: 'You need to get an ID, go see Mr. Rodriguez in guidance.', 
+    bOpen: 'Give your ticket to the security guard by the entrance to the gym.', 
     cOpen: '', 
+    
+    baOpen: ' They are selling them at the trading post.', 
+    
+    
+    aImg: "http://i.imgur.com/pUMBLhA.jpg",
     
     aEvent: "none",
     bEvent: "none",
@@ -465,9 +474,9 @@ roomObjects["sculpture"] = {locationID: "007", name: "Sculpture", name2: "Torch"
 
 roomObjects["sculpture2"] = {locationID: "007", name: "animodule", name2: "-----3---3-2--", visible: "yes", numDesc: 1, desc1: "This large painted plywood sculpture is a combination of a bust of a native american and a torch with the name of the school emblazoned on the side. Its bright colors and prominent lines is a proudly welcome visitors to the building. There is a label on the sculpture.", img: "http://i.imgur.com/FP7FsJ0.jpg", width: "12vw"}
 
-roomObjects["mrRamos"] = {locationID: "007", name: "Security Guard", name2: "Mr Ramos", visible: "yes", numDesc: 1, desc1: "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.", img: "http://i.imgur.com/YtlXGGg.jpg", width: "30vw"}
+roomObjects["mrRamos"] = {locationID: "007", name: "Security Guard", name2: "Mr Ramos", visible: "yes", numDesc: 1, desc1: "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.", img: "http://i.imgur.com/TXrOUTk.jpg", width: "30vw"}
 
-roomObjects["mrRamoss"] = {locationID: "007", name: "Mr", name2: "Ramos", visible: "yes", numDesc: 1, desc1: "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.", img: "http://i.imgur.com/YtlXGGg.jpg", width: "30vw"}
+roomObjects["mrRamoss"] = {locationID: "007", name: "Mr", name2: "Ramos", visible: "yes", numDesc: 1, desc1: "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.", img: "http://i.imgur.com/TXrOUTk.jpg", width: "30vw"}
 
 roomObjects["school"] = {locationID: "003", name: "School", name2: "Building", visible: "yes", numDesc: 1, desc1: "The large brick school rises four stories in front of you. There is a banner on the side of the building daring you to be great!", width: "30vw"}
 
@@ -868,6 +877,7 @@ $(".choicesHolder").on('click', '.choiceOne', function () {
             if(talkingTo == talkCharacters[key]["name"]){
                 $(".textBox").append('<h1 class="inBoxText">' + talkCharacters[key][idChoice + "Open"] + '</h1>');
                 $(".choicesHolder").html(talkCharacters[key][idChoice]);
+                $(".lci").attr("src", talkCharacters[key][idChoice + "Img"]);
                 if(talkCharacters[key][idChoice] == " "){
                     $(".cr").css({visibility: "hidden"});
                 }
@@ -978,6 +988,7 @@ $(".choicesHolder").on('click', '.choiceTwo', function () {
             if(talkingTo == talkCharacters[key]["name"]){
                 $(".textBox").append('<h1 class="inBoxText">' + talkCharacters[key][idChoice + "Open"] + '</h1>');
                 $(".choicesHolder").html(talkCharacters[key][idChoice]);
+                $(".lci").attr("src", talkCharacters[key][idChoice + "Img"]);
                 if(talkCharacters[key][idChoice] == " "){
                     $(".cr").css({visibility: "hidden"});
                 }
@@ -1032,6 +1043,7 @@ $(".choicesHolder").on('click', '.choiceThree', function () {
         if(talkCharacters[key][idChoice + "Event"] == "none"){
             if(talkingTo == talkCharacters[key]["name"]){
                 $(".textBox").append('<h1 class="inBoxText">' + talkCharacters[key][idChoice + "Open"] + '</h1>');
+                $(".lci").attr("src", talkCharacters[key][idChoice + "Img"]);
                 $(".choicesHolder").html(talkCharacters[key][idChoice]);
                 if(talkCharacters[key][idChoice] == " "){
                     $(".cr").css({visibility: "hidden"});
@@ -1838,6 +1850,17 @@ function commandListSearch(textInput){
                 }
                 break;
                 return;
+        case "sign in":
+        case "sign book":
+                if(currentLocation == "007"){
+                    $("input").val("talk to ramos");
+                    $(".textBox").append('<h1 class="inBoxText">Mr. Ramos stops you from signing into the book.</h1>');
+                    talkStart();
+                }else{
+                    $(".textBox").append('<h1 class="inBoxText">There is nothing to sign here.</h1>');
+                }
+                break;
+                return;
         case "dig in sand":
         case "search sand":
         case "search bottom of middle tank":
@@ -2179,12 +2202,28 @@ function commandListSearch(textInput){
     
     
     eventPlayer();
-    scroller();
     
     if(inventory["idCard"]["locationID"] == "9999"){
-        
+        locations["westLobby"]["desc"] = "You are at the western end of East Side High School’s main lobby. Sitting attentively at the front desk is a security guard. There is a large painted plywood sculpture prominently standing next to the desk.";
+        roomObjects["mrRamos"]["img"] = "http://i.imgur.com/6yiBSzI.jpg"
+        roomObjects["mrRamoss"]["img"] = "http://i.imgur.com/6yiBSzI.jpg"
+        roomObjects["mrRamos"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos."
+        roomObjects["mrRamoss"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos."
     }
     
+    if(inventory["idCard"]["locationID"] !== "9999"){
+        locations["westLobby"]["desc"] = "You are at the western end of East Side High School’s main lobby. Sitting attentively at the front desk is a security guard. There is a large painted plywood sculpture prominently standing next to the desk. The security guard eyes you carefully.";
+        roomObjects["mrRamos"]["img"] = "http://i.imgur.com/TXrOUTk.jpg"
+        roomObjects["mrRamoss"]["img"] = "http://i.imgur.com/TXrOUTk.jpg"
+        roomObjects["mrRamos"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him."
+        roomObjects["mrRamoss"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him."
+    }
+    
+    $(".textBox").html(function () {
+        return $(this).html().replace("undefined", "Security guard, Carlos Ortiz, steps in front of you, blocks your path, crosses his arms and says “Can’t go this way, you’re gonna have to wait for the expansion.”"); 
+    });
+    
+    scroller();
 };
 
 
