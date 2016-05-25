@@ -161,10 +161,10 @@ locations["IdOffice"] = {locationID: "021", NE: "021", NW: "021", SE: "021", SW:
 
 
 
-locations["Garden"] = {locationID: "025", NE: "025", NW: "025", SE: "025", SW: "003", N: "026", E: "025", W: "025", S: "008", U: "025", D: "025", title: "GARDEN", desc: 'You are standing on a path that bisects a lovely urban garden that is tucked behind East Side’s auditorium. A large mural covers a cinderblock wall to the west and in the northwest corner of the garden there is a small greenhouse. There is a wooden sign hanging at the garden’s entrance.', width: "30vw", img: "http://i.imgur.com/iMikJ7P.png", look: "none"};
+locations["Garden"] = {locationID: "025", NE: "025", NW: "026", SE: "025", SW: "003", N: "026", E: "025", W: "025", S: "008", U: "025", D: "025", title: "GARDEN", desc: 'You are standing on a path that bisects a lovely urban garden that is tucked behind East Side’s auditorium. A large mural covers a cinderblock wall to the west and in the northwest corner of the garden there is a small greenhouse. There is a wooden sign hanging at the garden’s entrance.', width: "30vw", img: "http://i.imgur.com/iMikJ7P.png", look: "none"};
 
 
-locations["GREENHOUSE"] = {locationID: "026", NE: "026", NW: "026", SE: "026", SW: "026", N: "026", E: "026", W: "026", S: "025", U: "026", D: "026", title: "GREENHOUSE", desc: '', width: "30vw", img: "http://i.imgur.com/iMikJ7P.png", look: "none"};
+locations["GREENHOUSE"] = {locationID: "026", NE: "026", NW: "026", SE: "026", SW: "026", N: "026", E: "026", W: "026", S: "025", U: "026", D: "026", title: "Small Greenhouse", desc: '', width: "30vw", img: "http://i.imgur.com/yuyhMKt.jpg", look: "none"};
 
 
 
@@ -299,7 +299,7 @@ talkCharacters["angelHotDog"] = {
     
     StartImg: "http://i.imgur.com/ylwzlzP.png",
     
-    start: '<div class="choiceOne" id="a"><h1>1. Yes</h1></div><div class="choiceTwo" id="b"><h1>2. No</h1></div>', 
+    start: '<div class="choiceOne" id="a"><h1>1. Yes</h1></div><div class="choiceTwo" id="b"><h1>2. No thanks, maybe later.</h1></div>', 
     
     startOpen: 'How can I help ya? Wanna buy a hotdog?', 
     
@@ -507,9 +507,12 @@ roomObjects["church"] = {locationID: "005.3", name: "church", name2: "-----4----
 
 roomObjects["greenhouse"] = {locationID: "005.4", name: "house", name2: "green house", visible: "yes", numDesc: 1, desc1: 'The windows and doors are boarded up on this creepy looking house badly in need of a new paint job.', img: "http://i.imgur.com/RClF0kG.jpg", width: "30vw"}
 
+
 roomObjects["fishtanks"] = {locationID: "008", name: "fish tanks", name2: "tanks", visible: "yes", numDesc: 1, desc1: 'Which tank would you like to examine?', img: "http://i.imgur.com/8HGNods.jpg", width: "30vw"}
 roomObjects["fishwtanks"] = {locationID: "008", name: "tank", name2: "2131231231232", visible: "yes", numDesc: 1, desc1: 'Which tank would you like to examine?', img: "http://i.imgur.com/8HGNods.jpg", width: "30vw"}
 roomObjects["leftFish"] = {locationID: "008", name: "left fish tank", name2: "left tank", visible: "yes", numDesc: 1, desc1: 'In the left fish tank there are a number of small Brook Trout a species of freshwater fish native to eastern United States and Canada.w', img: "http://i.imgur.com/ZWRlDE4.jpg", width: "30vw"}
+
+
 roomObjects["middleFish"] = {locationID: "008", name: "middle fish tank", name2: "middle tank", visible: "yes", numDesc: 1, desc1: 'The middle fish tank house African Cichlids, a popular freshwater fish kept in the home aquariums.', img: "http://i.imgur.com/iziHyGh.jpg", width: "30vw"}
 roomObjects["rightfish"] = {locationID: "008", name: "right fish tank", name2: "right tank", visible: "yes", numDesc: 1, desc1: 'The right fish tank is home to a variety of Amazon Tropical fish. On top of the right fish tank is a small shaker of fish food.', img: "http://i.imgur.com/GWvA0q4.jpg", width: "30vw"}
 
@@ -519,7 +522,7 @@ roomObjects["fountain"] = {locationID: "009.1", name: "fountain", name2: "water 
 
 roomObjects["flowers"] = {locationID: "025", name: "flower", name2: "flowers", visible: "yes", numDesc: 1, desc1: 'Throughout the garden there is a lovely variety of flora that has been proudly cultivated by the Environmental Science Club.', width: "30vw"}
 
-roomObjects["muralsec"] = {locationID: "025", name: "mural", name2: "sadasdasdasdsadsadasdsadsadsa", visible: "yes", numDesc: 1, desc1: 'The vividly colored art is a fine example of the inspiring power of nature!', width: "30vw"}
+roomObjects["muralsec"] = {locationID: "025", name: "mural", name2: "sadasdasdasdsadsadasdsadsadsa", visible: "yes", numDesc: 1, desc1: 'The vividly colored art is a fine example of the inspiring power of nature!', width: "30vw", img: "http://i.imgur.com/OR7PULt.jpg"}
 
 roomObjects["sign"] = {locationID: "025", name: "sign", name2: "sadasdasdasdsadsadasdsadsadsa", visible: "yes", numDesc: 1, desc1: 'The wooden sign reads: “Environmental Science Club”', width: "30vw"}
 
@@ -587,7 +590,7 @@ function southWest(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['NSW'] + '</h1>');
             }
             
-            if(locations[key]['NSW'] == "undefined"){
+            if(locations[key]['NSW'] == undefined){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['SW'] !== currentLocation){
@@ -619,7 +622,7 @@ function southEast(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['NSE'] + '</h1>');
             }
             
-            if(locations[key]['NSE'] == "undefined"){
+            if(locations[key]['NSE'] == undefined){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['SE'] !== currentLocation){
@@ -651,7 +654,7 @@ function northEast(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['NNE'] + '</h1>');
             }
             
-            if(locations[key]['NNE'] == "undefined"){
+            if(locations[key]['NNE'] == undefined){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['NE'] !== currentLocation){
@@ -683,7 +686,7 @@ function northWest(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['NNW'] + '</h1>');
             }
             
-            if(locations[key]['NNW'] == "undefined"){
+            if(locations[key]['NNW'] == undefined){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['NW'] !== currentLocation){
@@ -716,7 +719,7 @@ function north(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['NN'] + '</h1>');
             }
             
-            if(locations[key]['NN'] == "undefined"){
+            if(locations[key]['NN'] == undefined){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['N'] !== currentLocation){
@@ -779,6 +782,10 @@ function east(){
             if(locations[key]['E'] == currentLocation){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['EN'] + '</h1>');
             }
+            
+            if(locations[key]['EN'] == undefined){
+                $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
+            }
             if(locations[key]['E'] !== currentLocation){
                 currentLocation = locations[key]['E']
                 $(".lci").attr("src", locations[key]['img']);
@@ -806,6 +813,10 @@ function west(){
         if(locations[key]['locationID'] == currentLocation){
             if(locations[key]['W'] == currentLocation){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['WN'] + '</h1>');
+            }
+            
+            if(locations[key]['WN'] == undefined){
+                $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['W'] !== currentLocation){
                 currentLocation = locations[key]['W']
@@ -835,6 +846,10 @@ function up(){
             if(locations[key]['U'] == currentLocation){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['UN'] + '</h1>');
             }
+            
+            if(locations[key]['UN'] == undefined){
+                $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
+            }
             if(locations[key]['U'] !== currentLocation){
                 currentLocation = locations[key]['U']
                 $.each( locations, function( sekey, sevalue ) {
@@ -861,6 +876,10 @@ function down(){
         if(locations[key]['locationID'] == currentLocation){
             if(locations[key]['D'] == currentLocation){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['DN'] + '</h1>');
+            }
+            
+            if(locations[key]['DN'] == undefined){
+                $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['D'] !== currentLocation){
                 currentLocation = locations[key]['D']
@@ -958,6 +977,8 @@ $(".choicesHolder").on('click', '.choiceOne', function () {
             if(dbt == 1 && ftt == 1 && dtt == 0 && tvt == 0){
                 $(".textBox").append('<h1 class="inBoxText">Here ya go, Enjoy!</h1>');
                 tokens -= 1;
+                $(".pt").html("Points: " + points + "")
+                $(".tk").html("Tokens: " + tokens + "")
                 $(".textBox").append('<h1 class="inBoxText" style="color: red;">You lost 1 token!</h1>');
                 $(".choicesHolder").css({visibility: "hidden"});
                 $(".cr").css({visibility: "hidden"});
@@ -1721,6 +1742,25 @@ function wait(){
 
 
 /*--------------------------*/
+/*Wait command..............*/
+
+var numss = 3;
+
+function bathroom(){
+    randomNum15 = Math.floor(Math.random() * numss) + 1;
+    
+    if(randomNum15 == 1){
+        $(".textBox").append('<h1 class="inBoxText">Eh… nature’s not calling just yet...</h1>');
+    }else if(randomNum15 == 2){
+        $(".textBox").append('<h1 class="inBoxText">You enter, take care of business, and thankfully, you remember to wash your hands.</h1>');
+    }else if(randomNum15 == 3){
+        $(".textBox").append('<h1 class="inBoxText">Before entering a student exits the bathroom and warns, “you might want to wait a few minute before going in there.”.</h1>');
+    }
+}
+
+
+
+/*--------------------------*/
 /*Help commands.............*/
 
 
@@ -1886,6 +1926,13 @@ function commandListSearch(textInput){
     };
     
     switch(textInput){
+        case "go to bathroom":
+        case "enter bathroom":
+                if(currentLocation == "022.1"){
+                    bathroom();
+                }else{
+                    $(".textBox").append('<h1 class="inBoxText">There is no bathroom here.</h1>');
+                }
         case "drink":
         case "drink water":
         case "drink from fountain":
@@ -1931,8 +1978,8 @@ function commandListSearch(textInput){
         case "enter greenhouse":
                 if(currentLocation == "005.3"){
                     $(".textBox").append('<h1 class="inBoxText">Even if the front door of this spooky house wasn’t boarded up you probably wouldn’t have the courage to go inside.</h1>');
-                } else if(currentLocation == "005.3"){
-                    $(".textBox").append('<h1 class="inBoxText">Even if the front door of this spooky house wasn’t boarded up you probably wouldn’t have the courage to go inside.</h1>');
+                } else if(currentLocation == "025"){
+                    north();
                 }else{
                     $(".textBox").append('<h1 class="inBoxText">There is no house here.</h1>');
                 }
@@ -2389,6 +2436,7 @@ function gateOpenClose(){
         
         if(latch == "open"){
             $(".textBox").append('<h1 class="inBoxText">This time you use all your strength and the gate swings widely open.</h1>');
+            points += 1;
             locations["NicholsSt"]["desc"] = "You are standing in the middle of Nichols Street between Van Buren and Pulaski Street. To the north is a high chainlink fence that blocks the way into an alley that lies between East Side’s A-Building and C-Building. There is a large open gate in the middle of the fence that allows entry into the alley. To the Northeast there is a brown metal door. To the south lies St. Casmir’s Church.";
             locations["NicholsSt"]["N"] = "005.2";
             roomObjects["gateFence"]["desc1"] = "There is a gate in the chain link fence and it is open.";
