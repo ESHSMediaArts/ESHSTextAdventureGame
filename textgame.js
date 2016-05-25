@@ -19,6 +19,7 @@ var eastMove = true;
 var westMove = true;
 var upMove = true;
 var downMove = true;
+var reasonNoMove = "If you are reading this, please go to room 103 and yell at Anthony.";
 
 var points = 0;
 var tokens = 0;
@@ -161,10 +162,10 @@ locations["IdOffice"] = {locationID: "021", NE: "021", NW: "021", SE: "021", SW:
 
 
 
-locations["Garden"] = {locationID: "025", NE: "025", NW: "026", SE: "025", SW: "003", N: "026", E: "025", W: "025", S: "008", U: "025", D: "025", title: "GARDEN", desc: 'You are standing on a path that bisects a lovely urban garden that is tucked behind East Side’s auditorium. A large mural covers a cinderblock wall to the west and in the northwest corner of the garden there is a small greenhouse. There is a wooden sign hanging at the garden’s entrance.', width: "30vw", img: "http://i.imgur.com/iMikJ7P.png", look: "none"};
+locations["Garden"] = {locationID: "025", NE: "025", NW: "026", SE: "025", SW: "003", N: "026", E: "025", W: "025", S: "008", U: "025", D: "025", title: "GARDEN", desc: 'You are standing on a path that bisects a lovely urban garden that is tucked behind East Side’s auditorium. A large mural covers a cinderblock wall to the west and in the northwest corner of the garden there is a small greenhouse. There is a wooden sign hanging at the garden’s entrance, and a red bench along the path.', width: "30vw", img: "http://i.imgur.com/iMikJ7P.png", look: "none"};
 
 
-locations["GREENHOUSE"] = {locationID: "026", NE: "026", NW: "026", SE: "026", SW: "026", N: "026", E: "026", W: "026", S: "025", U: "026", D: "026", title: "Small Greenhouse", desc: '', width: "30vw", img: "http://i.imgur.com/yuyhMKt.jpg", look: "none"};
+locations["GREENHOUSE"] = {locationID: "026", NE: "026", NW: "026", SE: "026", SW: "026", N: "026", E: "026", W: "026", S: "025", U: "026", D: "026", title: "Small Greenhouse", desc: 'This clear plastic structure is packed to the brims with all of what you would expect would be kept in a greenhouse. Is it hot in here or is it me?', width: "30vw", img: "http://i.imgur.com/yuyhMKt.jpg", look: "none"};
 
 
 
@@ -415,7 +416,7 @@ inventory["softBall"] = {locationID: "void", name: "Softball", name2: "Ball", pi
 inventory["stick"] = {locationID: "000", name: "Stick", name2: "Twig", pickname: "the stick.", pick2name: "The stick", desc: "There is nothing special about this typical stick.", takeable: "yes", eventRun: "none", specialDef: "no"};
 
 
-inventory["tooools"] = {locationID: "025", name: "gardening tools", name2: "tool", pickname: "the gardening tools.", pick2name: "The gardening tools", desc: "gardening", takeable: "yes", eventRun: "none", specialDef: "no"};
+inventory["tooools"] = {locationID: "025", floorname: "bucket of gardening tools", name: "gardening tools", name2: "tools", pickname: "the gardening tools.", pick2name: "the gardening tools", desc: "These garden variety tools would be all you need to maintain a garden.", takeable: "yes", eventRun: "none", specialDef: "no"};
 
 
 inventory["picture"] = {locationID: "-0-0", name: "Picture", name2: "Photo", pickname: "the picture.", pick2name: "The picture", desc: 'This is a photograph taken of this year’s student council. On the back there is some writing: "Photo 36, Page 12, 2016 YB"', takeable: "yes", eventRun: "none", specialDef: "no"};
@@ -524,7 +525,7 @@ roomObjects["flowers"] = {locationID: "025", name: "flower", name2: "flowers", v
 
 roomObjects["muralsec"] = {locationID: "025", name: "mural", name2: "sadasdasdasdsadsadasdsadsadsa", visible: "yes", numDesc: 1, desc1: 'The vividly colored art is a fine example of the inspiring power of nature!', width: "30vw", img: "http://i.imgur.com/OR7PULt.jpg"}
 
-roomObjects["sign"] = {locationID: "025", name: "sign", name2: "sadasdasdasdsadsadasdsadsadsa", visible: "yes", numDesc: 1, desc1: 'The wooden sign reads: “Environmental Science Club”', width: "30vw"}
+roomObjects["sign"] = {locationID: "025", name: "sign", name2: "sadasdasdasdsadsadasdsadsadsa", visible: "yes", numDesc: 1, desc1: 'The wooden sign reads: “Environmental Science Club”', width: "30vw", img: "http://i.imgur.com/6rHuQPB.png"}
 
 roomObjects["flowers23"] = {locationID: "025", name: "plants", name2: "plant", visible: "yes", numDesc: 1, desc1: 'Throughout the garden there is a lovely variety of flora that has been proudly cultivated by the Environmental Science Club.', width: "30vw"}
 
@@ -1190,18 +1191,31 @@ function checkInventory(){
         
         $.each( inventory, function( key, value ) {
             if(inventory[key]['locationID'] == "9999" && stt == 0){
-                $(".textBox").append('<span class="inBoxTextSpan"> Your inventory consists of: a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<span class="inBoxTextSpan"> Your inventory consists of: a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                } else {
+                    $(".textBox").append('<span class="inBoxTextSpan"> Your inventory consists of: a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                }
+                
                 ftt += 1;
             };
             
             if(inventory[key]['locationID'] == "9999" && stt > 0 && ftt + 1 == dbt){
-                $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                } else {
+                    $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                }
                 ftt += 1;
                 return false;
             };
             
             if(inventory[key]['locationID'] == "9999" && stt > 0 && ftt + 1 !== dbt){
-                $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                } else {
+                    $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                }
                 ftt += 1;
             };
             
@@ -1280,7 +1294,7 @@ function pickUP(){
         if(inventory[key]['locationID'] === currentLocation && (stringSplitted[0] == "pick" && (inventory[key]['name'].toLowerCase() === stringSplitted[2] || inventory[key]['name'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] || inventory[key]['name'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4] || inventory[key]['name'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4] + " " + stringSplitted[5]) || stringSplitted[0] == "take" && (inventory[key]['name'].toLowerCase() === stringSplitted[1] || inventory[key]['name'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] || inventory[key]['name'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] + " " + stringSplitted[3] || inventory[key]['name'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4])) || inventory[key]['locationID'] === currentLocation && (stringSplitted[0] == "pick" && (inventory[key]['name2'].toLowerCase() === stringSplitted[2] || inventory[key]['name2'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] || inventory[key]['name2'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4] || inventory[key]['name2'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4] + " " + stringSplitted[5]) || stringSplitted[0] == "take" && (inventory[key]['name2'].toLowerCase() === stringSplitted[1] || inventory[key]['name2'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] || inventory[key]['name2'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] + " " + stringSplitted[3] || inventory[key]['name2'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4]))){
             dbt += 1;
             if(inventory[key]['takeable'] == "yes"){
-                $(".textBox").append('<h1 class="inBoxText"> You reach over and pick up the ' + inventory[key]['pickname'] + '</h1>');
+                $(".textBox").append('<h1 class="inBoxText"> You reach over and pick up ' + inventory[key]['pickname'] + '</h1>');
                 inventory[key]['locationID'] = "9999";
             };
             
@@ -1306,20 +1320,35 @@ function pickUP(){
     if(tvt > 0){
         $.each( inventory, function( key, value ) {
             if(inventory[key]['locationID'] == currentLocation && stt == 0){
-                $(".textBox").append('<span class="inBoxTextSpan"> You took: a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<span class="inBoxTextSpan"> You took: a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                } else {
+                    $(".textBox").append('<span class="inBoxTextSpan"> You took: a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                }
+                
                 ftt += 1;
                 inventory[key]['locationID'] = "9999";
             };
             
             if(inventory[key]['locationID'] == currentLocation && stt > 0 && ftt + 1 == dbt){
-                $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                } else {
+                    $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                }
+                
+                
                 ftt += 1;
                 inventory[key]['locationID'] = "9999";
                 return false;
             };
             
             if(inventory[key]['locationID'] == currentLocation && stt > 0 && ftt + 1 !== dbt){
-                $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                } else {
+                    $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                }
                 ftt += 1;
                 inventory[key]['locationID'] = "9999";
             };
@@ -1386,7 +1415,11 @@ function openingLook(){
     if(dbt == 1){
         $.each( inventory, function( key, value ) {
             if(inventory[key]['locationID'] == currentLocation && inventory[key]['specialDef'] == "no"){
-                $(".textBox").append('<h1 class="inBoxText"> You see a ' + inventory[key]['name'].toLowerCase() + ' laying on the ground.</h1>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<h1 class="inBoxText"> You can see: a ' + inventory[key]['name'].toLowerCase() + ' here.</h1>');
+                } else {
+                    $(".textBox").append('<h1 class="inBoxText"> You can see: a ' + inventory[key]['floorname'].toLowerCase() + ' here.</h1>');
+                }
             };
             
         });
@@ -1395,19 +1428,32 @@ function openingLook(){
     if(dbt > 1){
         $.each( inventory, function( key, value ) {
             if(inventory[key]['locationID'] == currentLocation && stt == 0){
-                
-                $(".textBox").append('<span class="inBoxTextSpan"> You can see: a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<span class="inBoxTextSpan"> You can see: a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                } else {
+                    $(".textBox").append('<span class="inBoxTextSpan"> You can see: a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                }
                 ftt += 1;
             };
             
             if(inventory[key]['locationID'] == currentLocation && stt > 0 && ftt + 1 == dbt){
-                $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                } else {
+                    $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['floorname'].toLowerCase() + '.</span>');
+                }
+                
+                
                 ftt += 1;
                 return false;
             };
             
             if(inventory[key]['locationID'] == currentLocation && stt > 0 && ftt + 1 !== dbt){
-                $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                } else {
+                    $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['floorname'].toLowerCase() + '.</span>');
+                }
                 ftt += 1;
             };
             
@@ -1858,6 +1904,7 @@ function commandListSearch(textInput){
     var stringSplitted = string.split(" ");
     
     
+    
     previousPoints = points;
     previousTokens = tokens;
     previousSecurity = security
@@ -1867,7 +1914,9 @@ function commandListSearch(textInput){
         $(".textBox").append('<h1 class="inBoxText">>' + $("input").val().toLowerCase() + '</h1>');
     }
     
-    
+    if(northMove == false){
+        $(".textBox").append('<h1 class="inBoxText">>' + reasonNoMove + '</h1>');
+    }
     
     if(string !== "again" && string !== "a"){
         previousCommand = string;
@@ -1926,6 +1975,47 @@ function commandListSearch(textInput){
     };
     
     switch(textInput){
+        case "sit on bench":
+        case "sit on red bench":
+                if(currentLocation == "025" && northMove == true){
+                    $(".textBox").append('<h1 class="inBoxText">You seat yourself on the bench and decide to soak it all in.</h1>');
+                    northMove = false;
+                    eastMove = false;
+                    westMove = false;
+                    southMove = false;
+                    upMove = false;
+                    downMove = false;
+                    nehMove = false;
+                    seMove = false;
+                    nwMove = false;
+                    swMove = false;
+                    reasonNoMove = "You are sitting down. Please stand up first to move.";
+                } else {
+                    $(".textBox").append('<h1 class="inBoxText">There is no bench here.</h1>');
+                }
+                break;
+                return;
+        case "stand":
+        case "stand up":
+        case "get off bench":
+                if(currentLocation == "025" && northMove == false){
+                    $(".textBox").append('<h1 class="inBoxText">You stand up.</h1>');
+                    northMove = true;
+                    eastMove = true;
+                    westMove = true;
+                    southMove = true;
+                    upMove = true;
+                    downMove = true;
+                    nehMove = true;
+                    seMove = true;
+                    nwMove = true;
+                    swMove = true;
+                    reasonNoMove = "If you are reading this, please go to room 103 and yell at Anthony.";
+                } else {
+                    $(".textBox").append('<h1 class="inBoxText">You are standing already.</h1>');
+                }
+                break;
+                return;
         case "go to bathroom":
         case "enter bathroom":
                 if(currentLocation == "022.1"){
@@ -1933,6 +2023,8 @@ function commandListSearch(textInput){
                 }else{
                     $(".textBox").append('<h1 class="inBoxText">There is no bathroom here.</h1>');
                 }
+                break;
+                return;
         case "drink":
         case "drink water":
         case "drink from fountain":
