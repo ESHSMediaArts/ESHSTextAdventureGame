@@ -535,9 +535,14 @@ roomObjects["garageDoors"] = {locationID: "005.2", name: "garage", name2: "garag
 
 roomObjects["garawgeDoors"] = {locationID: "005.2", name: "garage doors", name2: "-----4----3", visible: "yes", numDesc: 1, desc1: 'The two steel garage doors are closed.', img: "http://i.imgur.com/RClF0kG.jpg", width: "30vw"}
 
-roomObjects["church"] = {locationID: "005.3", name: "church", name2: "-----4----3", visible: "yes", numDesc: 1, desc1: 'Flowers line the steps leading to the entrance of this lovely church.', img: "http://i.imgur.com/RClF0kG.jpg", width: "30vw"}
+roomObjects["church"] = {locationID: "005.3", name: "church", name2: "-----4----3", visible: "yes", numDesc: 1, desc1: 'Flowers line the steps leading to the entrance of this lovely church.', img: "http://i.imgur.com/WfEkOVa.jpg", width: "30vw"}
 
-roomObjects["greenhouse"] = {locationID: "005.4", name: "house", name2: "green house", visible: "yes", numDesc: 1, desc1: 'The windows and doors are boarded up on this creepy looking house badly in need of a new paint job.', img: "http://i.imgur.com/RClF0kG.jpg", width: "30vw"}
+
+roomObjects["lindas"] = {locationID: "005.3", name: "lindas", name2: "linda's", visible: "yes", numDesc: 1, desc1: 'This seems to be a typical Portuguese bakery common in the Ironbound.', img: "http://i.imgur.com/Y7aGze0.jpg", width: "30vw"}
+roomObjects["lindass"] = {locationID: "005.3", name: "lindas bakery", name2: "linda's bakery", visible: "yes", numDesc: 1, desc1: 'This seems to be a typical Portuguese bakery common in the Ironbound.', img: "http://i.imgur.com/Y7aGze0.jpg", width: "30vw"}
+
+
+roomObjects["greenhouse"] = {locationID: "005.4", name: "house", name2: "green house", visible: "yes", numDesc: 1, desc1: 'The windows and doors are boarded up on this creepy looking house badly in need of a new paint job.', img: "http://i.imgur.com/GBTQKWh.jpg", width: "30vw"}
 
 
 roomObjects["fishtanks"] = {locationID: "008", name: "fish tanks", name2: "tanks", visible: "yes", numDesc: 1, desc1: 'Which tank would you like to examine?', img: "http://i.imgur.com/8HGNods.jpg", width: "30vw"}
