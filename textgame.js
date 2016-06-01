@@ -114,7 +114,7 @@ locations["NicholscornerPulaski"] = {locationID: "005.3", NE: "005.3", NW: "005.
 
 
 
-locations["pulaskiNewYork"] = {locationID: "005.4", NE: "005.4", NW: "005.4", SE: "005.4", SW: "005.4", N: "005.4", E: "005.4", W: "004", S: "005.3", U: "005.4", D: "005.4", title: "Corner of New York Ave and Pulaski Street", desc: "There is a greenhouse in the state of disrepair here at the southwest corner of Pulaski Street and New York Avenue. To the south further down Pulaski Street you can see East Side High School.", width: "30vw", img: "http://i.imgur.com/KRHh30y.png", look: "none", NSW: "Even if the front door of this spooky house wasn’t boarded up you probably wouldn’t have the courage to go inside."};
+locations["pulaskiNewYork"] = {locationID: "005.4", NE: "005.4", NW: "005.4", SE: "005.4", SW: "005.4", N: "005.4", E: "005.4", W: "004", S: "005.3", U: "005.4", D: "005.4", title: "Corner of New York Ave and Pulaski Street", desc: "There is a greenhouse in the state of disrepair here at the southwest corner of Pulaski Street and New York Avenue. To the south further down Pulaski Street you can see East Side High School.", width: "30vw", img: "http://i.imgur.com/KRHh30y.png", look: "none", NSW: "Even if the front door of this spooky house wasn’t boarded up you probably wouldn’t have the courage to go inside.", NN: "You walk further north on Pulaski until you hit Walnut Street. You don’t want your visit to East Side High School to end so you turn around and head back."};
 
 
 
@@ -523,7 +523,7 @@ roomObjects["mrRamosss"] = {locationID: "007", name: "Guard", name2: "Security",
 
 roomObjects["school"] = {locationID: "003", name: "School", name2: "Building", visible: "yes", numDesc: 1, desc1: "The large brick school rises four stories in front of you. There is a banner on the side of the building daring you to be great!", width: "30vw"}
 
-roomObjects["quarterOnFloor"] = {locationID: "005", name: "Shiny Quarter", name2: "Quarter", visible: "yes", numDesc: 1, desc1: "The quarter appears to be worth 25c.", img: "http://i.imgur.com/a1aXfso.jpg"}
+roomObjects["quarterOnFloor"] = {locationID: "005", name: "Shiny Quarter", name2: "Quarter", visible: "yes", numDesc: 1, desc1: "The quarter appears to be worth 25¢.", img: "http://i.imgur.com/a1aXfso.jpg"}
 
 roomObjects["gateFence"] = {locationID: "005.1", name: "Gate", name2: "Fence", visible: "yes", numDesc: 1, desc1: "There is a gate in the chain link fence is closed and is secured with a latch.", img: "http://i.imgur.com/a1aXfso.jpg"}
 
