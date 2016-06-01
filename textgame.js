@@ -281,7 +281,7 @@ talkCharacters["mrRamos"] = {
     
     aOpen: 'You need to get an ID, go see Mr. Rodriguez in guidance.', 
     bOpen: 'Give your ticket to the security guard by the entrance to the gym.', 
-    cOpen: 'There is no “passing through.”', 
+    cOpen: 'There is no “just passing through.”', 
     
     baOpen: 'They are selling them at the trading post. Go east and it will be opposite the auditorium.', 
     bbOpen: 'Enjoy the game.', 
@@ -2164,7 +2164,7 @@ function commandListSearch(textInput){
                 return;
         case "go to bathroom":
         case "enter bathroom":
-                if(currentLocation == "022.1"){
+                if(currentLocation == "022.1" || currentLocation == "009.1"){
                     bathroom();
                 }else{
                     $(".textBox").append('<h1 class="inBoxText">There is no bathroom here.</h1>');
