@@ -2215,12 +2215,18 @@ function commandListSearch(textInput){
                 }
                 break;
                 return;
-        case "enter house":
         case "enter greenhouse":
+                if(currentLocation == "025"){
+                    north();
+                }else{
+                    $(".textBox").append('<h1 class="inBoxText">There is no greenhouse here.</h1>');
+                }
+                break;
+                return;
+        case "enter house":
+        case "enter green house":
                 if(currentLocation == "005.3"){
                     $(".textBox").append('<h1 class="inBoxText">Even if the front door of this spooky house wasn’t boarded up you probably wouldn’t have the courage to go inside.</h1>');
-                } else if(currentLocation == "025"){
-                    north();
                 }else{
                     $(".textBox").append('<h1 class="inBoxText">There is no house here.</h1>');
                 }
