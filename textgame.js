@@ -110,11 +110,11 @@ locations["NicholsSt"] = {locationID: "005.1", NE: "005.1", NW: "005.1", SE: "00
 
 
 
-locations["NicholscornerPulaski"] = {locationID: "005.3", NE: "005.3", NW: "005.3", SE: "005.3", SW: "005.3", N: "005.4", E: "005.3", W: "005.1", S: "005.3", U: "005.3", D: "005.3", title: "Corner of Nichols and Pulaski Street", desc: "You are standing at the southeast corner of East Side High School where Nichols and Pulaski Streets meet. To the southwest the facade of St. Casimirs Church rises skyward and to the east is the entrance to Linda’s Portuguese Bakery.", width: "30vw", img: "http://i.imgur.com/sU5jIWa.png", look: "none", EN: "As you walk through the threshold of Linda’s Bakery the aroma of fresh bread wafts through your nostrils. You close your eyes and inhale to relish the smell. When you reopen them you see the long line ahead of you and decide to return later.", NSW: "The door to the church is locked.", SN: "You walk further south on Pulaski until you hit East Kinney Street. You don’t want your visit to East Side High School to end so you turn around and head back."};
+locations["NicholscornerPulaski"] = {locationID: "005.3", NE: "005.3", NW: "005.3", SE: "005.3", SW: "005.3", N: "005.4", E: "005.3", W: "005.1", S: "005.3", U: "005.3", D: "005.3", title: "Corner of Nichols and Pulaski Street", desc: "You are standing at the southeast corner of East Side High School where Nichols and Pulaski Streets meet. To the southwest the facade of St. Casimirs Church rises skyward and to the east is the entrance to Linda’s Portuguese Bakery.", width: "30vw", img: "http://i.imgur.com/sU5jIWa.png", look: "none", EN: "As you walk through the threshold of Linda’s Bakery the aroma of fresh bread wafts through your nostrils. You close your eyes and inhale to relish the smel l. When you reopen them you see the long line ahead of you and decide to return later.", NSW: "The door to the church is locked.", SN: "You walk further south on Pulaski until you hit East Kinney Street. You don’t want your visit to East Side High School to end so you turn around and head back."};
 
 
 
-locations["pulaskiNewYork"] = {locationID: "005.4", NE: "005.4", NW: "005.4", SE: "005.4", SW: "005.4", N: "005.4", E: "005.4", W: "004", S: "005.3", U: "005.4", D: "005.4", title: "Corner of New York Ave and Pulaski Street", desc: "There is a greenhouse in the state of disrepair here at the southwest corner of Pulaski Street and New York Avenue. To the south further down Pulaski Street you can see East Side High School.", width: "30vw", img: "http://i.imgur.com/sU5jIWa.png", look: "none", NSW: "Even if the front door of this spooky house wasn’t boarded up you probably wouldn’t have the courage to go inside."};
+locations["pulaskiNewYork"] = {locationID: "005.4", NE: "005.4", NW: "005.4", SE: "005.4", SW: "005.4", N: "005.4", E: "005.4", W: "004", S: "005.3", U: "005.4", D: "005.4", title: "Corner of New York Ave and Pulaski Street", desc: "There is a greenhouse in the state of disrepair here at the southwest corner of Pulaski Street and New York Avenue. To the south further down Pulaski Street you can see East Side High School.", width: "30vw", img: "http://i.imgur.com/KRHh30y.png", look: "none", NSW: "Even if the front door of this spooky house wasn’t boarded up you probably wouldn’t have the courage to go inside."};
 
 
 
@@ -435,7 +435,7 @@ inventory["largeSeed"] = {locationID: "026", name: "Large Seed", name2: "Seed", 
 
 inventory["empty"] = {locationID: "026", name: "watering can", name2: "S]\\s]s\ad]", pickname: "the watering can.", pick2name: "The watering can", desc: 'The watering can is empty.', takeable: "yes", eventRun: "none", specialDef: "no"};
 
-inventory["full"] = {locationID: "VOID", name: "Large Seed", name2: "Seed", pickname: "the large seed.", pick2name: "The large seed", desc: 'The watering can is full.', takeable: "yes", eventRun: "none", specialDef: "no"};
+inventory["full"] = {locationID: "VOID", name: "watering can", name2: "S]\\s]s\ad]", pickname: "the watering can.", pick2name: "The watering can", desc: 'The watering can is full.', takeable: "yes", eventRun: "none", specialDef: "no"};
 
 
 
@@ -2037,12 +2037,47 @@ function commandListSearch(textInput){
     };
     
     switch(textInput){
+        case "fill watering can":
+                if(inventory["empty"]["locationID"] == "9999"){
+                    if(currentLocation == "009.1"){
+                        $(".textBox").append('<h1 class="inBoxText">You filled the watering can to the brim.</h1>');
+                        inventory["empty"]["locationID"] = "VOID";
+                        inventory["full"]["locationID"] = "9999";
+                    }else{
+                        $(".textBox").append('<h1 class="inBoxText">There is no way to fill the watering can here.</h1>');
+                    }
+                }else{
+                    $(".textBox").append('<h1 class="inBoxText">You have no watering can.</h1>');
+                }
+                break;
+                return;
         case "water seed":
         case "water large seed":
-                if(currentLocation == "008"){
-                    feedFish();
-                }else{  
-                    $(".textBox").append('<h1 class="inBoxText">There is no fish here.</h1>');
+                if(inventory["largeSeed"]["locationID"] == "PLANTED"){
+                    if(currentLocation == "025"){
+                        if(inventory["full"]["locationID"] == "9999"){
+                            $(".textBox").append('<h1 class="inBoxText">As you begin to water the area where you have planted the see, you jump back startled. Emerging from the dirt, a flowering plant grows at an uncanny speed. At the top a large red blossom unfolds and with magical blings tokens begin to pop out of the flower. You nimbly catch them all in mid-air.</h1>');
+                            inventory["largeSeed"]["locationID"] = "WATERED";
+                            inventory["full"]["locationID"] = "VOID";
+                            inventory["empty"]["locationID"] = "9999";
+                            points += 10;
+                            tokens += 5;
+                        }else{
+                            $(".textBox").append('<h1 class="inBoxText">Your watering can is empty</h1>');
+                        }
+                    }else{
+                        $(".textBox").append('<h1 class="inBoxText">There is no seed you can water here.</h1>');
+                    }
+                }else if(inventory["largeSeed"]["locationID"] == "9999"){
+                    $(".textBox").append('<h1 class="inBoxText">You need to plant the seed first</h1>');
+                }else if(inventory["largeSeed"]["locationID"] == "WATERED"){
+                    if(currentLocation == "025"){
+                        $(".textBox").append('<h1 class="inBoxText">You water the plant again. Nothing happens.</h1>');
+                    }else{
+                        $(".textBox").append('<h1 class="inBoxText">There is no seed here.</h1>');
+                    }
+                }else{
+                    $(".textBox").append('<h1 class="inBoxText">There is no seed here.</h1>');
                 }
                 break;
                 return;
@@ -2054,6 +2089,7 @@ function commandListSearch(textInput){
                     if(inventory["tools"]["locationID"] == "9999"){
                         if(currentLocation == "025"){
                             $(".textBox").append('<h1 class="inBoxText">Using the gardening tools, you carefully plant the large seed into a soft fertile patch of soil.</h1>');
+                            inventory["largeSeed"]["locationID"] = "PLANTED";
                         }else{  
                             $(".textBox").append('<h1 class="inBoxText">You cant plant the seed here.</h1>');
                         }
