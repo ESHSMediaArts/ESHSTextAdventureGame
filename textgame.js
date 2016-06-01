@@ -99,7 +99,7 @@ locations["DeosHotDog"] = {locationID: "004.1", NE: "004.1", NW: "004.1", SE: "0
 locations["BasketBallCourts"] = {locationID: "002", NE: "002", NW: "002", SE: "002", SW: "002", N: "001.1", E: "002", W: "002", S: "002", U: "002", D: "002", title: "BASKETBALL COURT", desc: "There are a few Ann Street school students playing a game of H-O-R-S-E.", width: "30vw", img: "http://i.imgur.com/H3DbZj6.png", look: "none", EN: "An iron gate blocks your way out of the park.", WN: "Going west would lead you out of the park and onto Adams Street and away from East Side High School. After careful consideration you decide to stick around and visit East Side High.", NSW: "Going west would lead you out of the park and onto Adams Street and away from East Side High School. After careful consideration you decide to stick around and visit East Side High.", NNW: "Going west would lead you out of the park and onto Adams Street and away from East Side High School. After careful consideration you decide to stick around and visit East Side High."};
 
 
-locations["VanBurenSt"] = {locationID: "003", NE: "003", NW: "003", SE: "003", SW: "003", N: "004", E: "006", W: "000", S: "005", U: "003", D: "003", title: "VAN BUREN STREET", desc: "After carefully crossing the street you are standing on the sidewalk in front of East Side High School. There are a number of red doors that give access to the building. To the west there is a large sign indicating the entrance to Independence Park.", img: "http://i.imgur.com/KwxUVNn.png", width: "30vw", look: "none"};
+locations["VanBurenSt"] = {locationID: "003", NE: "003", NW: "003", SE: "003", SW: "003", N: "004", E: "006", W: "000", S: "005", U: "003", D: "003", title: "VAN BUREN STREET", desc: "You are standing on the sidewalk in front of East Side High School. There are a number of red doors that give access to the building. To the west there is a large sign indicating the entrance to Independence Park.", img: "http://i.imgur.com/KwxUVNn.png", width: "30vw", look: "none"};
 
 locations["VanBurenStN"] = {locationID: "004", NE: "004", NW: "004.1", SE: "004", SW: "004", N: "004", E: "005.4", W: "001", S: "003", U: "004", D: "004", title: "CORNER OF VAN BUREN AND NEW YORK AVE", desc: "You are on Van Buren Street just north of East Side High School. To the west there is an entrance to the park that leads to a soccer field. To the east there are beautiful residential homes that face the park and must be at least a hundred years old. Van Buren Street continues to the north. There is a hot dog truck parked next to the softball field. ", img: "http://i.imgur.com/0Jkf8cc.jpg", width: "30vw", EN: "It would be impolite and a general bad idea to enter someone's house uninvited.", look: "none"};
 
@@ -121,16 +121,16 @@ locations["pulaskiNewYork"] = {locationID: "005.4", NE: "005.4", NW: "005.4", SE
 locations["Alley"] = {locationID: "005.2", NE: "005.2", NW: "005.2", SE: "005.2", SW: "005.2", N: "005.2", E: "005.2", W: "005.2", S: "005.1", U: "005.2", D: "005.2", title: "ALLEY", desc: "This colorfully muraled alley lies between two of the three buildings that make up East Side High School. There are two garage doors on the eastern wall and at the far end of the alley there is a bank of red doors that give entrance to A-Building.", width: "30vw", img: "http://i.imgur.com/BBOSTHm.jpg", look: "none"};
 
 
-locations["lobbyFoyer"] = {locationID: "006", NE: "006", NW: "006", SE: "006", SW: "006", N: "006", E: "007", W: "003", S: "006", U: "006", D: "006", title: "LOBBY FOYER", desc: "You are standing in a small vestibule between two sets of red door that give entrance into East Side High School. There is a large mural of a torch on the north wall and there is a ticket window set in the south wall.", img: "http://i.imgur.com/FmEDwsl.jpg", width: "30vw", look: "none"};
+locations["lobbyFoyer"] = {locationID: "006", NE: "006", NW: "006", SE: "006", SW: "006", N: "006", E: "007", W: "003", S: "006", U: "006", D: "006", title: "LOBBY FOYER", desc: "You are standing in a small vestibule between two sets of red doors that give entrance into East Side High School. There is a large mural of a torch on the north wall and there is a ticket window set in the south wall.", img: "http://i.imgur.com/FmEDwsl.jpg", width: "30vw", look: "none"};
 
 
 locations["westLobby"] = {locationID: "007", NE: "007", NW: "007", SE: "007.5", SW: "007", N: "007", E: "008", W: "006", S: "009.1", U: "007", D: "007", title: "MAIN LOBBY", desc: "You are at the western end of East Side High School’s main lobby. Sitting attentively at the front desk is a security guard. There is a large painted plywood sculpture prominently standing next to the desk. The security guard eyes you carefully.", width: "30vw", img: "http://i.imgur.com/Y8b5TCO.jpg", look: "none"};
 
 locations["alleyVesibule"] = {locationID: "007.5", NE: "008", NW: "007", SE: "007.5", SW: "007.5", N: "007.5", E: "007.5", W: "007.5", S: "005.2", U: "007.5", D: "007.5", title: "Alley Vestibule", desc: "This is a small area south of the main lobby. To the west there is are elevator doors, to the south is an exit to an alley and to the east there are stairs.", width: "30vw", img: "http://i.imgur.com/GnFkzMJ.jpg", look: "none"};
 
-locations["eastLobby"] = {locationID: "008", NE: "008", NW: "008", SE: "008", SW: "007.5", N: "025", E: "022.1", W: "007", S: "008", U: "008", D: "008", title: "MAIN LOBBY", desc: "You are at the eastern end of the main lobby. There is a seating area here with chairs arranged rectangularly and an octagonal table in the center. On the south wall there is a trophy case and three fish tanks. Hanging from a pillar there is a screen with digital signage showing information about school events. A bank red doors lead outside to the north. To the east a hallway continues into the building and to the southwest there is a small vestibule with stairs, an elevator and an exit.", width: "30vw", img: "http://i.imgur.com/wlcS9Pp.jpg", look: "none"};
+locations["eastLobby"] = {locationID: "008", NE: "008", NW: "008", SE: "008", SW: "007.5", N: "025", E: "022.1", W: "007", S: "008", U: "008", D: "008", title: "MAIN LOBBY", desc: "You are at the eastern end of the main lobby. There is a seating area here with chairs arranged rectangularly and an octagonal table in the center. On the south wall there is a trophy case and three fish tanks. Hanging from a pillar there is a screen with digital signage showing information about school events. A set of bank red doors lead outside to the north. To the east a hallway continues into the building and to the southwest there is a small vestibule with stairs, an elevator and an exit.", width: "30vw", img: "http://i.imgur.com/wlcS9Pp.jpg", look: "none"};
 
-locations["audWest"] = {locationID: "022.1", NE: "022.1", NW: "022.1", SE: "022.1", SW: "022.1", N: "022.1", E: "022.2", W: "008", S: "022.1", U: "022.1", D: "022.1", title: "Auditorium Hallway", desc: "", width: "30vw", img: "http://i.imgur.com/wlcS9Pp.jpg", look: "none"};
+locations["audWest"] = {locationID: "022.1", NE: "022.1", NW: "022.1", SE: "022.1", SW: "022.1", N: "022.1", E: "022.2", W: "008", S: "022.1", U: "022.1", D: "022.1", title: "Auditorium Hallway", desc: "You are now on the western end of the auditorium hallway. To your southwest is a bathroom, on the southern wall you can see the school’s student store, The Trading Post as well as a collection of photography prints. There is a stairwell to the northeast while directly north you can enter the auditorium. The hallway continues east while the main lobby is to the west.", width: "30vw", img: "http://i.imgur.com/wlcS9Pp.jpg", look: "none"};
 
 locations["audEast"] = {locationID: "022.2", NE: "022.2", NW: "022.2", SE: "022.2", SW: "022.2", N: "022.2", E: "022.2", W: "022.1", S: "023", U: "022.2", D: "022.2", title: "Auditorium Hallway", desc: "", width: "30vw", img: "http://i.imgur.com/wlcS9Pp.jpg", look: "none"};
 
@@ -139,7 +139,7 @@ locations["BottomOfStairs"] = {locationID: "023", NE: "023", NW: "023", SE: "023
 
 
 
-locations["hallWay0"] = {locationID: "009.1", NE: "009.1", NW: "009.1", SE: "009.1", SW: "009.1", N: "007", E: "020", W: "012", S: "009.2", U: "009.1", D: "009.1", title: "Hallway", desc: "You are at the northern end of a hallway located just outside the main office. The entrance to the main office is to the west and the entrance to the guidance office is to the east. There is a water fountain here and doorway to the men's lavatory to the northeast. There are numerous college pennants that line the entire stretch of the hallway.  ", width: "30vw", img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4sW0ki48RAx0qh3OX44OUa_hEYsnbfSo-1qzgGwvJau3F1BKkDA", look: "none"};
+locations["hallWay0"] = {locationID: "009.1", NE: "009.1", NW: "009.1", SE: "009.1", SW: "009.1", N: "007", E: "020", W: "012", S: "009.2", U: "009.1", D: "009.1", title: "Hallway", desc: "You are at the northern end of a hallway located just outside the main office. The entrance to the main office is to the west and the entrance to the guidance office is to the east. There is a water fountain here and doorway to the men's lavatory to the northeast. There are numerous college pennants that line the entire stretch of the hallway.  ", width: "30vw", img: "http://i.imgur.com/AnnoTvZ.jpg", look: "none"};
 locations["hallWay1"] = {locationID: "009.2", NE: "009.2", NW: "009.2", SE: "009.2", SW: "009.2", N: "009.1", E: "", W: "", S: "009.3", U: "009.2", D: "009.2", title: "Hallway", desc: "You are at the middle of the hallway located just outside the main office. The west leads you to the entrance of the office while the east sends you to back end of the guidance office. Meanwhile south continues further down the hallway.", width: "30vw", img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4sW0ki48RAx0qh3OX44OUa_hEYsnbfSo-1qzgGwvJau3F1BKkDA", look: "none"};
 locations["hallWay2"] = {locationID: "009.3", NE: "009.3", NW: "009.3", SE: "009.3", SW: "009.3", N: "009.2", E: "", W: "", S: "014", U: "009.3", D: "009.3", title: "Hallway", desc: "You are at the south end of the hallway located just outside the main office. To the west is a doorway to the principal’s conference room and to the east is a door to another office. To the southeast is a stairway leading up.", width: "30vw", img: "http://i.imgur.com/dFeWcaH.jpg", look: "none"};
 
@@ -165,7 +165,7 @@ locations["IdOffice"] = {locationID: "021", NE: "021", NW: "021", SE: "021", SW:
 locations["Garden"] = {locationID: "025", NE: "025", NW: "026", SE: "025", SW: "003", N: "026", E: "025", W: "025", S: "008", U: "025", D: "025", title: "GARDEN", desc: 'You are standing on a path that bisects a lovely urban garden that is tucked behind East Side’s auditorium. A large mural covers a cinderblock wall to the west and in the northwest corner of the garden there is a small greenhouse. There is a wooden sign hanging at the garden’s entrance, and a red bench along the path.', width: "30vw", img: "http://i.imgur.com/iMikJ7P.png", look: "none"};
 
 
-locations["GREENHOUSE"] = {locationID: "026", NE: "026", NW: "026", SE: "026", SW: "026", N: "026", E: "026", W: "026", S: "025", U: "026", D: "026", title: "Small Greenhouse", desc: 'This clear plastic structure is packed to the brims with all of what you would expect would be kept in a greenhouse. Is it hot in here or is it me?', width: "30vw", img: "http://i.imgur.com/yuyhMKt.jpg", look: "none"};
+locations["GREENHOUSE"] = {locationID: "026", NE: "026", NW: "026", SE: "026", SW: "026", N: "026", E: "026", W: "026", S: "025", U: "026", D: "026", title: "Small Greenhouse", desc: 'This clear plastic structure is packed to the brim with all of what you would expect would be kept in a greenhouse. Is it hot in here or is it me?', width: "30vw", img: "http://i.imgur.com/yuyhMKt.jpg", look: "none"};
 
 
 
@@ -258,7 +258,7 @@ talkCharacters["mrRamos"] = {
     locationID: "007",
     
     name: "mr ramos",
-    name2: "mr",
+    name2: "security guard",
     name3: "ramos",
     
     talking: "false", 
@@ -270,23 +270,31 @@ talkCharacters["mrRamos"] = {
     StartImg: 'http://i.imgur.com/6yiBSzI.jpg',
     
     a:' ', 
-    b:'<div class="choiceOne" id="ba"><h1>1. I don’t have a ticket. Where can I get one?</h1></div><div class="choiceTwo" id="a"><h1>2.</h1></div><div class="choiceThree" id="a"><h1>3.</h1></div>',
-    c:' ',
+    b:'<div class="choiceOne" id="ba"><h1>1. I don’t have a ticket. Where can I get one?</h1></div><div class="choiceTwo" id="bb"><h1>2. Okay, thanks!</h1></div><div class="choiceThree" id="bc"><h1></h1></div>',
+    c:'<div class="choiceOne" id="a"><h1>1. I am a new student.</h1></div><div class="choiceTwo" id="b"><h1>2. I am here to see the basketball game.</h1></div><div class="choiceThree" id="c"><h1>3. Just passing through.</h1></div>',
     
     ba:' ',
+    bb:' ',
     
     aOpen: 'You need to get an ID, go see Mr. Rodriguez in guidance.', 
     bOpen: 'Give your ticket to the security guard by the entrance to the gym.', 
-    cOpen: '', 
+    cOpen: 'There is no “passing through.”', 
     
-    baOpen: ' They are selling them at the trading post.', 
+    baOpen: 'They are selling them at the trading post. Go east and it will be opposite the auditorium.', 
+    bbOpen: 'Enjoy the game.', 
     
     
     aImg: "http://i.imgur.com/pUMBLhA.jpg",
+    bImg: "http://i.imgur.com/pUMBLhA.jpg",
+    baImg: "http://i.imgur.com/pUMBLhA.jpg",
+    bbImg: "http://i.imgur.com/6yiBSzI.jpg",
     
     aEvent: "none",
     bEvent: "none",
+    cEvent: "none",
     
+    baEvent: "none",
+    bbEvent: "none",
     
 }
 
@@ -408,18 +416,27 @@ var inventory = {};
 inventory["shaker of fish food"] = {locationID: "008", name: "Shaker of Fish Food", name2: "Shaker", pickname: "the shaker of fish food.", pick2name: "The shaker of fish food", desc: "The shaker reads: 'Sabor Pescado La Ultimo Comida para Los Fishies Latinos!' with an image of a fish dancing the salsa next to a word balloon saying: 'Que Delicioso.'", takeable: "yes", eventRun: "none", specialDef: "no"};
 
 
-inventory["pamphlet"] = {locationID: "000", name: "Pamphlet", name2: "-----3--3---3-", pickname: "the pamphlet.", pick2name: "The pamphlet", desc:"</h1><h1 class='inBoxText' style='font-size: 0.8vw;'>Welcome to <br>EAST SIDE HIGH SCHOOL THE TEXT ADVENTURE GAME! <br><br>Here are some common commands to the game: <br><br>Directions: <br>north, n, move north <br>west, w, move west <br>south, s, move south <br>east, e, move east <br>up, u, move up, climb, climb up <br>down, d, move down <br>northwest, nw, move northwest <br>northeast, ne, move northeast <br>southwest, sw, move southwest <br>southeast, se, move southeast <br><br>Actions: <br>inventory, i, check inventory <br>drop, place	 <br>pick up, take <br>tokens, tk <br>points, pt <br>look at <br>again <br>wait <br>commands <br><br>To talk to a character in the game: <br>Talk to (character name) <br>If you need a hint you can “talk to N1-g3l” and he will help out if her can! <br><br>ENJOY THE GAME!!!", takeable: "yes", eventRun: "none", specialDef: "no"};
+inventory["pamphlet"] = {locationID: "000", name: "Pamphlet", name2: "-----3--3---3-", pickname: "the pamphlet.", pick2name: "The pamphlet", desc:"</h1><h1 class='inBoxText' style='font-size: 0.8vw;'>Welcome to <br>EAST SIDE HIGH SCHOOL THE TEXT ADVENTURE GAME! <br><br>Here are some common commands to the game: <br><br>Directions: <br>north, n, move north <br>west, w, move west <br>south, s, move south <br>east, e, move east <br>up, u, move up, climb, climb up <br>down, d, move down <br>northwest, nw, move northwest <br>northeast, ne, move northeast <br>southwest, sw, move southwest <br>southeast, se, move southeast <br><br>Actions: <br>inventory, i, check inventory <br>drop, place	 <br>pick up, take <br>tokens, tk <br>points, pt <br>look at <br>again <br>wait <br>commands <br><br>To talk to a character in the game: <br>Talk to (character name) <br>If you need a hint you can “talk to N1-g3l” and he will help out if he can! <br><br>ENJOY THE GAME!!!", takeable: "yes", eventRun: "none", specialDef: "no"};
 
 inventory["softBall"] = {locationID: "void", name: "Softball", name2: "Ball", pickname: "the well-worn softball.", pick2name: "The well-worn softball", desc: "This well-worn softball appears to have seen many games.", takeable: "yes", eventRun: "none", specialDef: "no"};
 
 
-inventory["stick"] = {locationID: "000", name: "Stick", name2: "Twig", pickname: "the stick.", pick2name: "The stick", desc: "There is nothing special about this typical stick.", takeable: "yes", eventRun: "none", specialDef: "no"};
+inventory["stick"] = {locationID: "000", floorname: "Stick", name: "Stick", name2: "Twig", pickname: "the stick.", pick2name: "The stick", desc: "There is nothing special about this typical stick.", takeable: "yes", eventRun: "none", specialDef: "no"};
 
 
-inventory["tooools"] = {locationID: "025", floorname: "bucket of gardening tools", name: "gardening tools", name2: "tools", pickname: "the gardening tools.", pick2name: "the gardening tools", desc: "These garden variety tools would be all you need to maintain a garden.", takeable: "yes", eventRun: "none", specialDef: "no"};
+inventory["tools"] = {locationID: "025", floorname: "bucket of gardening tools", name: "gardening tools", name2: "tools", pickname: "the gardening tools.", pick2name: "the gardening tools", desc: "These garden variety tools would be all you need to maintain a garden.", takeable: "yes", eventRun: "none", specialDef: "no"};
 
 
-inventory["picture"] = {locationID: "-0-0", name: "Picture", name2: "Photo", pickname: "the picture.", pick2name: "The picture", desc: 'This is a photograph taken of this year’s student council. On the back there is some writing: "Photo 36, Page 12, 2016 YB"', takeable: "yes", eventRun: "none", specialDef: "no"};
+inventory["picture"] = {locationID: "001", name: "Picture", name2: "Photo", pickname: "the picture.", pick2name: "The picture", desc: 'This is a photograph taken of this year’s student council. On the back there is some writing: "Photo 36, Page 12, 2016 YB"', takeable: "yes", eventRun: "none", specialDef: "no"};
+
+inventory["largeSeed"] = {locationID: "026", name: "Large Seed", name2: "Seed", pickname: "the large seed.", pick2name: "The large seed", desc: 'This seed seems to be unnaturally large and has a faint green glow to it.', takeable: "yes", eventRun: "none", specialDef: "no"};
+
+
+
+inventory["empty"] = {locationID: "026", name: "watering can", name2: "S]\\s]s\ad]", pickname: "the watering can.", pick2name: "The watering can", desc: 'The watering can is empty.', takeable: "yes", eventRun: "none", specialDef: "no"};
+
+inventory["full"] = {locationID: "VOID", name: "Large Seed", name2: "Seed", pickname: "the large seed.", pick2name: "The large seed", desc: 'The watering can is full.', takeable: "yes", eventRun: "none", specialDef: "no"};
+
 
 
 inventory["idCard"] = {locationID: "VOID", name: "ID Card", name2: "Student ID Card", pickname: "the ID card.", pick2name: "The ID card", desc: 'Your eyes are half closed and you have a weird expression in the photo on your plastic ID Card.', takeable: "yes", eventRun: "none", specialDef: "no"};
@@ -428,8 +445,6 @@ inventory["idCard"] = {locationID: "VOID", name: "ID Card", name2: "Student ID C
 inventory["gluedQuarter"] = {locationID: "005", name: "Shiny Quarter", name2: "Quarter", pickname: "the quarter.", pick2name: "The quarter", desc: "As you bend over to try to pick up the quarter. You realise it was glued to the floor. In the corner of your eyes to the west, you can see a group of 8th graders in the Basketball Courts laughing at you.", takeable: "no", eventRun: "none", specialDef: "no"};
 
 inventory["flowers"] = {locationID: "005.3", name: "Flower", name2: "Flowers", pickname: "the flower.", pick2name: "The flower", desc: "That would be sacrilege.", takeable: "no", eventRun: "none", specialDef: "  "};
-
-inventory["fish"] = {locationID: "008", name: "Fish", name2: "----------3--3--3---", pickname: "the quarter.", pick2name: "The quarter", desc: "Take fish from which tank?", takeable: "no", eventRun: "none", specialDef: ""};
 
 inventory["basketBallBall"] = {locationID: "002", name: "Ball", name2: "Basket Ball", pickname: "the ball.", pick2name: "The ball", desc: "While the kids are playing you jump onto the court and snatch the ball. As you attempt to flee the 8th graders quickly tackle you and take their ball back. A feeling of deep embarrassment sets in as you realize that you not only tried to steal from children but they also EASILY overpowered you.</h1><h1 class='inBoxText' style='color: red;'>We should subtract a point from your score.</h1>", takeable: "no", eventRun: "none", pointRemove: "1", specialDef: ""};
 
@@ -440,6 +455,8 @@ inventory["middleFish"] = {locationID: "008", name: "fish from middle tank", nam
 inventory["rightFish"] = {locationID: "008", name: "fish from right tank", name2: "------3--3---3-", pickname: "fishy fish", pick2name: "fiiiiesh", desc: 'You roll up your sleeve and reach into the right tank, but the fish you targeted slips out of your reach. The security guard eyes you suspiciously.', takeable: "no", eventRun: "removeSecurity", pointRemove: "1", specialDef: ""};
 
 inventory["hotdog"] = {locationID: "VOID", name: "Hotdog", name2: "------3--3---3-", pickname: "the hotdog.", pick2name: "The hotdog", desc: 'Hot Diggity Dog!', takeable: "yes", eventRun: "none", specialDef: "no"};
+
+inventory["fish"] = {locationID: "008", name: "fish", name2: "----------3--3--3---", pickname: "the quarter.", pick2name: "The quarter", desc: "Take fish from which tank?", takeable: "no", eventRun: "none", specialDef: ""};
 
 
 
@@ -466,13 +483,21 @@ roomObjects["gameBall"] = {locationID: "008", name: "Game Ball", name2: "Ball", 
 
 roomObjects["carvingsOnTree"] = {locationID: "000.1", name: "carvings", name2: "--3---2--1---2-3---2-2-45--f-f-", visible: "yes", numDesc: 6, desc1: '"Lead Programmer: Anthony DaLuz"', desc2: '"Story Writers: Raichel Echeverna, Wilmer Solano, Andrew Teheran, Rey Ricardo, Mariangela Zodda"', desc3: '"Graduate Mentor: Andre Zatta, and Marcel Lopes"', desc4: 'You see the initials "A.A + Z.Z" carved inside a heart.', desc5: '"T IS THE BEST TEACHER EVA!!!!"', desc6: '"Brought to you by East Side High School’s Media Arts Magnet Program."', width: "30vw"}
 
-roomObjects["IndependenceSign"] = {locationID: "003", name: "sign", name2: "--3---2--1---2-3---2-2-45--f-f-", visible: "yes", numDesc: 1, desc1: 'The sign reads: <br> <h1 class="inBoxText" style="text-align: center; font-size: 20px">INDEPENDENCE PARK</h1><br><h1 class="inBoxText" style="text-align: center; margin-top: -15px; font-size: 15px;">ESSEX COUNTY PARK SYSTEM</h1><br><h1 class="inBoxText" style="text-align: center; margin-top: -15px; font-size: 15px;">Established 1895</h1>', img: "http://i.imgur.com/5tBzOdI.jpg", width: "30vw"}
+roomObjects["IndependenceSign"] = {locationID: "003", name: "sign", name2: "--3---2--1---2-3---2-2-45--f-f-", visible: "yes", numDesc: 1, desc1: 'The sign reads: <br> <h1 class="inBoxText" style="text-align: center; font-size: 1.25vw">INDEPENDENCE PARK</h1><br><h1 class="inBoxText" style="text-align: center; margin-top: -15px; font-size: 1vw;">ESSEX COUNTY PARK SYSTEM</h1><br><h1 class="inBoxText" style="text-align: center; margin-top: -15px; font-size: 1vw;">Established 1895</h1>', img: "http://i.imgur.com/5tBzOdI.jpg", width: "30vw"}
 
-roomObjects["LobbyMural"] = {locationID: "006", name: "mural", name2: "logo", visible: "yes", numDesc: 1, desc1: 'You bask in the majesty of East Side’s 100 year old symbol of enlightenment through knowledge. ', img: "http://i.imgur.com/OivrgTO.jpg", width: "15vw"}
+roomObjects["LobbyMural"] = {locationID: "006", name: "mural", name2: "logo", visible: "yes", numDesc: 1, desc1: 'You bask in the majesty of East Side’s 100 year old symbol of enlightenment through knowledge.', img: "http://i.imgur.com/OivrgTO.jpg", width: "15vw"}
 
 roomObjects["AlleyMural"] = {locationID: "005.2", name: "mural", name2: "logo", visible: "yes", numDesc: 1, desc1: 'The mural covers the walls on the entire alley. On one wall, humongously written text reads, "DREAM!"', width: "30vw"}
 
-roomObjects["TicketWindow"] = {locationID: "006", name: "ticket window", name2: "window", visible: "yes", numDesc: 1, desc1: "The ticket window seems as if it hasn't been used for some time. Above the window an announcement case reads:", img: "http://i.imgur.com/mpCbi3N.jpg", width: "15vw"}
+
+
+
+
+roomObjects["TicketWindow"] = {locationID: "006", name: "ticket window", name2: "window", visible: "yes", numDesc: 1, desc1: 'A hastily written sign is taped to the ticket window that reads “All tickets are being sold at the Trading Post.” The ticket window seems as if it hasn`t been used for some time. Above the window an announcement case reads: <br> <h1 class="inBoxText" style="text-align: center; font-size: 1vw">Welcome</h1><br><h1 class="inBoxText" style="text-align: center; margin-top: -15px; font-size: 1vw;">To</h1><br><h1 class="inBoxText" style="text-align: center; margin-top: -15px; font-size: 1vw;">East Side High School</h1><br><h1 class="inBoxText" style="text-align: center; margin-top: -15px; font-size: 1vw;">Follow the three R’s</h1><br><h1 class="inBoxText" style="text-align: center; margin-top: -15px; font-size: 1vw;">Respect, Responsibility and Results!</h1>', img: "http://i.imgur.com/mpCbi3N.jpg", width: "15vw"}
+
+
+
+
 
 roomObjects["BrickHouse"] = {locationID: "004", name: "brick house", name2: "house", visible: "yes", numDesc: 1, desc1: "Your eyes fall upon the loveliest of the Ironbound homes that look upon the park this old brick house with green trim is a great example of the architectural style of its day.", img: "http://i.imgur.com/JrPd6Wr.jpg", width: "30vw"}
 
@@ -488,7 +513,7 @@ roomObjects["sculpture2"] = {locationID: "007", name: "animodule", name2: "-----
 
 roomObjects["mrRamos"] = {locationID: "007", name: "Security Guard", name2: "Mr Ramos", visible: "yes", numDesc: 1, desc1: "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.", img: "http://i.imgur.com/TXrOUTk.jpg", width: "30vw"}
 
-roomObjects["mrRamoss"] = {locationID: "007", name: "Mr", name2: "Ramos", visible: "yes", numDesc: 1, desc1: "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.", img: "http://i.imgur.com/TXrOUTk.jpg", width: "30vw"}
+roomObjects["mrRamoss"] = {locationID: "007", name: "Mr. Ramos", name2: "Ramos", visible: "yes", numDesc: 1, desc1: "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.", img: "http://i.imgur.com/TXrOUTk.jpg", width: "30vw"}
 
 roomObjects["school"] = {locationID: "003", name: "School", name2: "Building", visible: "yes", numDesc: 1, desc1: "The large brick school rises four stories in front of you. There is a banner on the side of the building daring you to be great!", width: "30vw"}
 
@@ -511,7 +536,7 @@ roomObjects["greenhouse"] = {locationID: "005.4", name: "house", name2: "green h
 
 roomObjects["fishtanks"] = {locationID: "008", name: "fish tanks", name2: "tanks", visible: "yes", numDesc: 1, desc1: 'Which tank would you like to examine?', img: "http://i.imgur.com/8HGNods.jpg", width: "30vw"}
 roomObjects["fishwtanks"] = {locationID: "008", name: "tank", name2: "2131231231232", visible: "yes", numDesc: 1, desc1: 'Which tank would you like to examine?', img: "http://i.imgur.com/8HGNods.jpg", width: "30vw"}
-roomObjects["leftFish"] = {locationID: "008", name: "left fish tank", name2: "left tank", visible: "yes", numDesc: 1, desc1: 'In the left fish tank there are a number of small Brook Trout a species of freshwater fish native to eastern United States and Canada.w', img: "http://i.imgur.com/ZWRlDE4.jpg", width: "30vw"}
+roomObjects["leftFish"] = {locationID: "008", name: "left fish tank", name2: "left tank", visible: "yes", numDesc: 1, desc1: 'In the left fish tank there are a number of small Brook Trout a species of freshwater fish native to eastern United States and Canada.', img: "http://i.imgur.com/ZWRlDE4.jpg", width: "30vw"}
 
 
 roomObjects["middleFish"] = {locationID: "008", name: "middle fish tank", name2: "middle tank", visible: "yes", numDesc: 1, desc1: 'The middle fish tank house African Cichlids, a popular freshwater fish kept in the home aquariums.', img: "http://i.imgur.com/iziHyGh.jpg", width: "30vw"}
@@ -530,7 +555,11 @@ roomObjects["sign"] = {locationID: "025", name: "sign", name2: "sadasdasdasdsads
 roomObjects["flowers23"] = {locationID: "025", name: "plants", name2: "plant", visible: "yes", numDesc: 1, desc1: 'Throughout the garden there is a lovely variety of flora that has been proudly cultivated by the Environmental Science Club.', width: "30vw"}
 
 
-roomObjects["flags"] = {locationID: "009.1", name: "flag", name2: "flags", visible: "yes", numDesc: 10, desc1: 'Your eyes fall upon a red and white flag from Montclair State University.', desc2: 'This red, black and white flag represents Rutgers university.', desc3: 'An orange and black pennant exhibits the school spirit of William Paterson University. ', desc4: 'New Jersey City University is honored in green, white and yellow.', desc5: 'A pirate can be seen on this blue, white and gray pennant from Seton Hall University.', desc6: 'The blue and white colors of Kean University look particularly sharp on this banner.', desc7: 'You gaze upon the bright red and white ensign of New Jersey Institute of Technology.', desc8: 'A green and yellow pennant symbolizes Essex County College.', desc9: 'You see Essex County College’s green and yellow pennant.', desc10: '', img: "http://i.imgur.com/iziHyGh.jpg", width: "30vw"}
+roomObjects["flags"] = {locationID: "009.1", name: "flag", name2: "flags", visible: "yes", numDesc: 9, desc1: 'Your eyes fall upon a red and white flag from Montclair State University.', desc2: 'This red, black and white flag represents Rutgers university.', desc3: 'An orange and black pennant exhibits the school spirit of William Paterson University. ', desc4: 'New Jersey City University is honored in green, white and yellow.', desc5: 'A pirate can be seen on this blue, white and gray pennant from Seton Hall University.', desc6: 'The blue and white colors of Kean University look particularly sharp on this banner.', desc7: 'You gaze upon the bright red and white ensign of New Jersey Institute of Technology.', desc8: 'A green and yellow pennant symbolizes Essex County College.', desc9: 'You see Essex County College’s green and yellow pennant.', width: "30vw"}
+
+roomObjects["flagzs"] = {locationID: "009.1", name: "pennants", name2: "pennant", visible: "yes", numDesc: 9, desc1: 'Your eyes fall upon a red and white flag from Montclair State University.', desc2: 'This red, black and white flag represents Rutgers university.', desc3: 'An orange and black pennant exhibits the school spirit of William Paterson University. ', desc4: 'New Jersey City University is honored in green, white and yellow.', desc5: 'A pirate can be seen on this blue, white and gray pennant from Seton Hall University.', desc6: 'The blue and white colors of Kean University look particularly sharp on this banner.', desc7: 'You gaze upon the bright red and white ensign of New Jersey Institute of Technology.', desc8: 'A green and yellow pennant symbolizes Essex County College.', desc9: 'You see Essex County College’s green and yellow pennant.', width: "30vw"}
+
+roomObjects["photos"] = {locationID: "009.1", name: "photographs", name2: "prints", visible: "yes", numDesc: 1, desc1: 'You take a moment to admire these beautifully composed photographic prints. Their handling of light and shade and the delicate way they capture surface texture gives a poignant depth and a tear in your eye.', width: "30vw"}
 
 
 
@@ -1170,6 +1199,11 @@ $(".choicesHolder").on('click', '.choiceThree', function () {
 
 
 function checkInventory(){
+    
+    ftt = 0;
+    stt = 0;
+    dbt = 0;
+    
     $.each( inventory, function( key, value) {
         if(inventory[key]['locationID'] === "9999"){
             dbt += 1;
@@ -1180,7 +1214,11 @@ function checkInventory(){
     if(dbt == 1){
         $.each( inventory, function( key, value ) {
             if(inventory[key]['locationID'] == "9999"){
-                $(".textBox").append('<h1 class="inBoxText"> Your inventory consists of: a ' + inventory[key]['name'].toLowerCase() + '.</h1>');
+                if(inventory[key]['floorname'] == undefined){
+                    $(".textBox").append('<span class="inBoxTextSpan"> Your inventory consists of: a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                } else {
+                    $(".textBox").append('<span class="inBoxTextSpan"> Your inventory consists of: a ' + inventory[key]['floorname'].toLowerCase() + '.</span>');
+                }
             };
             
         });
@@ -1204,7 +1242,7 @@ function checkInventory(){
                 if(inventory[key]['floorname'] == undefined){
                     $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['name'].toLowerCase() + '.</span>');
                 } else {
-                    $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                    $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['floorname'].toLowerCase() + '.</span>');
                 }
                 ftt += 1;
                 return false;
@@ -1212,7 +1250,7 @@ function checkInventory(){
             
             if(inventory[key]['locationID'] == "9999" && stt > 0 && ftt + 1 !== dbt){
                 if(inventory[key]['floorname'] == undefined){
-                    $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                    $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['name'].toLowerCase() + '</span>');
                 } else {
                     $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
                 }
@@ -1249,6 +1287,9 @@ function pickUP(){
     var string = $("input").val().toLowerCase();
     var stringSplitted = string.split(" ");
     
+    ftt = 0;
+    stt = 0;
+    dbt = 0;
     
     $.each( inventory, function( key, value) {
         if(inventory[key]['locationID'] === "9999" && (stringSplitted[0] == "pick" && (inventory[key]['name'].toLowerCase() === stringSplitted[2] || inventory[key]['name'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] || inventory[key]['name'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4] || inventory[key]['name'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4] + " " + stringSplitted[5]) || stringSplitted[0] == "take" && (inventory[key]['name'].toLowerCase() === stringSplitted[1] || inventory[key]['name'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] || inventory[key]['name'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] + " " + stringSplitted[3] || inventory[key]['name'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4])) || inventory[key]['locationID'] === "9999" && (stringSplitted[0] == "pick" && (inventory[key]['name2'].toLowerCase() === stringSplitted[2] || inventory[key]['name2'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] || inventory[key]['name2'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4] || inventory[key]['name2'].toLowerCase() === stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4] + " " + stringSplitted[5]) || stringSplitted[0] == "take" && (inventory[key]['name2'].toLowerCase() === stringSplitted[1] || inventory[key]['name2'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] || inventory[key]['name2'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] + " " + stringSplitted[3] || inventory[key]['name2'].toLowerCase() === stringSplitted[1] + " " + stringSplitted[2] + " " + stringSplitted[3] + " " + stringSplitted[4]))){
@@ -1319,44 +1360,61 @@ function pickUP(){
     
     if(tvt > 0){
         $.each( inventory, function( key, value ) {
-            if(inventory[key]['locationID'] == currentLocation && stt == 0){
-                if(inventory[key]['floorname'] == undefined){
-                    $(".textBox").append('<span class="inBoxTextSpan"> You took: a ' + inventory[key]['name'].toLowerCase() + '</span>');
-                } else {
-                    $(".textBox").append('<span class="inBoxTextSpan"> You took: a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
-                }
-                
-                ftt += 1;
-                inventory[key]['locationID'] = "9999";
-            };
-            
-            if(inventory[key]['locationID'] == currentLocation && stt > 0 && ftt + 1 == dbt){
-                if(inventory[key]['floorname'] == undefined){
-                    $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['name'].toLowerCase() + '.</span>');
-                } else {
-                    $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
-                }
-                
-                
-                ftt += 1;
-                inventory[key]['locationID'] = "9999";
-                return false;
-            };
-            
-            if(inventory[key]['locationID'] == currentLocation && stt > 0 && ftt + 1 !== dbt){
-                if(inventory[key]['floorname'] == undefined){
-                    $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['name'].toLowerCase() + '.</span>');
-                } else {
-                    $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
-                }
-                ftt += 1;
-                inventory[key]['locationID'] = "9999";
-            };
-            
-            
-            
-            if(inventory[key]['locationID'] == "9999" && stt == 0){
-                stt += 1;
+            if(dbt !== 1){
+                if(inventory[key]["takeable"] == "yes"){
+                    if(inventory[key]['locationID'] == currentLocation && stt == 0){
+                        if(inventory[key]['floorname'] == undefined){
+                            $(".textBox").append('<span class="inBoxTextSpan"> You took: a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                        } else {
+                            $(".textBox").append('<span class="inBoxTextSpan"> You took: a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                        }
+
+                        ftt += 1;
+                        inventory[key]['locationID'] = "9999";
+                    };
+
+                    if(inventory[key]['locationID'] == currentLocation && stt > 0 && ftt + 1 == dbt){
+
+                        if(inventory[key]['floorname'] == undefined){
+                            $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                        } else {
+                            $(".textBox").append('<span class="inBoxTextSpan">, and a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                        }
+
+
+                        ftt += 1;
+                        inventory[key]['locationID'] = "9999";
+                        return false;
+                    };
+
+                    if(inventory[key]['locationID'] == currentLocation && stt > 0 && ftt + 1 !== dbt){
+                        if(inventory[key]['floorname'] == undefined){
+                            $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['name'].toLowerCase() + '.</span>');
+                        } else {
+                            $(".textBox").append('<span class="inBoxTextSpan">, a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                        }
+                        ftt += 1;
+                        inventory[key]['locationID'] = "9999";
+                    };
+
+
+
+                    if(inventory[key]['locationID'] == "9999" && stt == 0){
+                        stt += 1;
+                    };
+                };
+            }else{
+                if(inventory[key]["takeable"] == "yes"){
+                    if(inventory[key]['locationID'] == currentLocation && stt == 0){
+                        if(inventory[key]['floorname'] == undefined){
+                            $(".textBox").append('<span class="inBoxTextSpan"> You took: a ' + inventory[key]['name'].toLowerCase() + '</span>');
+                        } else {
+                            $(".textBox").append('<span class="inBoxTextSpan"> You took: a ' + inventory[key]['floorname'].toLowerCase() + '</span>');
+                        }
+                        inventory[key]['locationID'] = "9999";
+                        return false;
+                    };
+                };
             };
         });
     }
@@ -1416,9 +1474,9 @@ function openingLook(){
         $.each( inventory, function( key, value ) {
             if(inventory[key]['locationID'] == currentLocation && inventory[key]['specialDef'] == "no"){
                 if(inventory[key]['floorname'] == undefined){
-                    $(".textBox").append('<h1 class="inBoxText"> You can see: a ' + inventory[key]['name'].toLowerCase() + ' here.</h1>');
+                    $(".textBox").append('<span class="inBoxTextSpan"> You can see: a ' + inventory[key]['name'].toLowerCase() + ' here.</span>');
                 } else {
-                    $(".textBox").append('<h1 class="inBoxText"> You can see: a ' + inventory[key]['floorname'].toLowerCase() + ' here.</h1>');
+                    $(".textBox").append('<span class="inBoxTextSpan"> You can see: a ' + inventory[key]['floorname'].toLowerCase() + ' here.</span>');
                 }
             };
             
@@ -1790,7 +1848,7 @@ function wait(){
 /*--------------------------*/
 /*Wait command..............*/
 
-var numss = 3;
+var numss = 5;
 
 function bathroom(){
     randomNum15 = Math.floor(Math.random() * numss) + 1;
@@ -1801,6 +1859,10 @@ function bathroom(){
         $(".textBox").append('<h1 class="inBoxText">You enter, take care of business, and thankfully, you remember to wash your hands.</h1>');
     }else if(randomNum15 == 3){
         $(".textBox").append('<h1 class="inBoxText">Before entering a student exits the bathroom and warns, “you might want to wait a few minute before going in there.”.</h1>');
+    }else if(randomNum15 == 4){
+        $(".textBox").append('<h1 class="inBoxText">You use all your force to open the door but it will not budge. You simply convince yourself you didn’t really have to go.</h1>');
+    }else if(randomNum15 == 5){
+        $(".textBox").append('<h1 class="inBoxText">Your phobia of using public restrooms kick in and you tell yourself you can wait a while longer before you need to go.</h1>');
     }
 }
 
@@ -1812,14 +1874,14 @@ function bathroom(){
 
 
 function helperList() {
-    $(".textBox").append('<h1 class="inBoxText" style="font-size: 0.8vw;">Welcome to <br>EAST SIDE HIGH SCHOOL THE TEXT ADVENTURE GAME! <br><br>Here are some common commands to the game: <br><br>Directions: <br>north, n, move north <br>west, w, move west <br>south, s, move south <br>east, e, move east <br>up, u, move up, climb, climb up <br>down, d, move down <br>northwest, nw, move northwest <br>northeast, ne, move northeast <br>southwest, sw, move southwest <br>southeast, se, move southeast <br><br>Actions: <br>inventory, i, check inventory <br>drop, place	 <br>pick up, take <br>tokens, tk <br>points, pt <br>look at <br>again <br>wait <br>commands <br><br>To talk to a character in the game: <br>Talk to (character name) <br>If you need a hint you can “talk to N1-g3l” and he will help out if her can! <br><br>ENJOY THE GAME!!!</h1>');
+    $(".textBox").append('<h1 class="inBoxText" style="font-size: 0.8vw;">Welcome to <br>EAST SIDE HIGH SCHOOL THE TEXT ADVENTURE GAME! <br><br>Here are some common commands to the game: <br><br>Directions: <br>north, n, move north <br>west, w, move west <br>south, s, move south <br>east, e, move east <br>up, u, move up, climb, climb up <br>down, d, move down <br>northwest, nw, move northwest <br>northeast, ne, move northeast <br>southwest, sw, move southwest <br>southeast, se, move southeast <br><br>Actions: <br>inventory, i, check inventory <br>drop, place	 <br>pick up, take <br>tokens, tk <br>points, pt <br>look at <br>again <br>wait <br>commands <br><br>To talk to a character in the game: <br>Talk to (character name) <br>If you need a hint you can “talk to N1-g3l” and he will help out if he can! <br><br>ENJOY THE GAME!!!</h1>');
 }
 
 
 
 function readPamphlet() {
     if(inventory["pamphlet"]["locationID"] == "9999"){
-        $(".textBox").append('<h1 class="inBoxText" style="font-size: 0.8vw;">Welcome to <br>EAST SIDE HIGH SCHOOL THE TEXT ADVENTURE GAME! <br><br>Here are some common commands to the game: <br><br>Directions: <br>north, n, move north <br>west, w, move west <br>south, s, move south <br>east, e, move east <br>up, u, move up, climb, climb up <br>down, d, move down <br>northwest, nw, move northwest <br>northeast, ne, move northeast <br>southwest, sw, move southwest <br>southeast, se, move southeast <br><br>Actions: <br>inventory, i, check inventory <br>drop, place	 <br>pick up, take <br>tokens, tk <br>points, pt <br>look at <br>again <br>wait <br>commands <br><br>To talk to a character in the game: <br>Talk to (character name) <br>If you need a hint you can “talk to N1-g3l” and he will help out if her can! <br><br>ENJOY THE GAME!!!</h1>');
+        $(".textBox").append('<h1 class="inBoxText" style="font-size: 0.8vw;">Welcome to <br>EAST SIDE HIGH SCHOOL THE TEXT ADVENTURE GAME! <br><br>Here are some common commands to the game: <br><br>Directions: <br>north, n, move north <br>west, w, move west <br>south, s, move south <br>east, e, move east <br>up, u, move up, climb, climb up <br>down, d, move down <br>northwest, nw, move northwest <br>northeast, ne, move northeast <br>southwest, sw, move southwest <br>southeast, se, move southeast <br><br>Actions: <br>inventory, i, check inventory <br>drop, place	 <br>pick up, take <br>tokens, tk <br>points, pt <br>look at <br>again <br>wait <br>commands <br><br>To talk to a character in the game: <br>Talk to (character name) <br>If you need a hint you can “talk to N1-g3l” and he will help out if he can! <br><br>ENJOY THE GAME!!!</h1>');
     } else {
         $(".textBox").append('<h1 class="inBoxText">You do not have a pamphlet.</h1>');
     };
@@ -1871,13 +1933,15 @@ function fall(){
 /*--------------------------*/
 /*food commands.............*/
 
-var pointToGive = 1;
+var pointToGiveFish = 1;
 
 function feedFish(){
     if(inventory["shaker of fish food"]["locationID"] == "9999"){
-        alert("yeh")
+        $(".textBox").append('<h1 class="inBoxText">You gingerly sprinkle fish food in each of the fish tanks. The fish hustle to eat the food and it is quickly all gone.</h1>');
+        points += pointToGiveFish;
+        pointToGiveFish = 0;
     } else {
-        alert("no")
+        $(".textBox").append('<h1 class="inBoxText">What do you want to feed the fish with?</h1>');
     }
 }
 
@@ -1902,8 +1966,6 @@ function commandListSearch(textInput){
     
     var string = textInput;
     var stringSplitted = string.split(" ");
-    
-    
     
     previousPoints = points;
     previousTokens = tokens;
@@ -1975,6 +2037,42 @@ function commandListSearch(textInput){
     };
     
     switch(textInput){
+        case "water seed":
+        case "water large seed":
+                if(currentLocation == "008"){
+                    feedFish();
+                }else{  
+                    $(".textBox").append('<h1 class="inBoxText">There is no fish here.</h1>');
+                }
+                break;
+                return;
+        case "plant seed":
+        case "plant large seed":
+        case "plant seed in ground":
+        case "plant large seed in ground":
+                if(inventory["largeSeed"]["locationID"] == "9999"){
+                    if(inventory["tools"]["locationID"] == "9999"){
+                        if(currentLocation == "025"){
+                            $(".textBox").append('<h1 class="inBoxText">Using the gardening tools, you carefully plant the large seed into a soft fertile patch of soil.</h1>');
+                        }else{  
+                            $(".textBox").append('<h1 class="inBoxText">You cant plant the seed here.</h1>');
+                        }
+                    }else{  
+                        $(".textBox").append('<h1 class="inBoxText">You dont have the right tools to plant the seed.</h1>');
+                    }
+                }else{  
+                    $(".textBox").append('<h1 class="inBoxText">You dont have a seed.</h1>');
+                }
+                break;
+                return;
+        case "feed fish":
+                if(currentLocation == "008"){
+                    feedFish();
+                }else{  
+                    $(".textBox").append('<h1 class="inBoxText">There is no fish here.</h1>');
+                }
+                break;
+                return;
         case "sit on bench":
         case "sit on red bench":
                 if(currentLocation == "025" && northMove == true){
@@ -2040,9 +2138,9 @@ function commandListSearch(textInput){
         case "sign book":
                 if(currentLocation == "007"){
                     $("input").val("talk to ramos");
-                    $(".textBox").append('<h1 class="inBoxText">Mr. Ramos stops you from signing into the book.</h1>');
+                    $(".textBox").append('<h1 class="inBoxText">Quickly the security guard waves his hands in front of the book.</h1>');
                     talkStart();
-                }else{
+                }else{  
                     $(".textBox").append('<h1 class="inBoxText">There is nothing to sign here.</h1>');
                 }
                 break;
@@ -2074,6 +2172,16 @@ function commandListSearch(textInput){
                     north();
                 }else{
                     $(".textBox").append('<h1 class="inBoxText">There is no house here.</h1>');
+                }
+                break;
+                return;
+        case "enter building":
+        case "enter east side":
+        case "enter school":
+                if(currentLocation == "003"){
+                    east();
+                }else{
+                    $(".textBox").append('<h1 class="inBoxText">There is no building here.</h1>');
                 }
                 break;
                 return;
@@ -2395,18 +2503,20 @@ function commandListSearch(textInput){
     
     if(inventory["idCard"]["locationID"] == "9999"){
         locations["westLobby"]["desc"] = "You are at the western end of East Side High School’s main lobby. Sitting attentively at the front desk is a security guard. There is a large painted plywood sculpture prominently standing next to the desk.";
-        roomObjects["mrRamos"]["img"] = "http://i.imgur.com/6yiBSzI.jpg"
-        roomObjects["mrRamoss"]["img"] = "http://i.imgur.com/6yiBSzI.jpg"
-        roomObjects["mrRamos"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos."
-        roomObjects["mrRamoss"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos."
+        roomObjects["mrRamos"]["img"] = "http://i.imgur.com/6yiBSzI.jpg";
+        talkCharacters["mrRamos"]["StartImg"] = "http://i.imgur.com/6yiBSzI.jpg";
+        roomObjects["mrRamoss"]["img"] = "http://i.imgur.com/6yiBSzI.jpg";
+        roomObjects["mrRamos"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos.";
+        roomObjects["mrRamoss"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos.";
     }
     
     if(inventory["idCard"]["locationID"] !== "9999"){
         locations["westLobby"]["desc"] = "You are at the western end of East Side High School’s main lobby. Sitting attentively at the front desk is a security guard. There is a large painted plywood sculpture prominently standing next to the desk. The security guard eyes you carefully.";
-        roomObjects["mrRamos"]["img"] = "http://i.imgur.com/TXrOUTk.jpg"
-        roomObjects["mrRamoss"]["img"] = "http://i.imgur.com/TXrOUTk.jpg"
-        roomObjects["mrRamos"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him."
-        roomObjects["mrRamoss"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him."
+        roomObjects["mrRamos"]["img"] = "http://i.imgur.com/TXrOUTk.jpg";
+        talkCharacters["mrRamos"]["StartImg"] = "http://i.imgur.com/TXrOUTk.jpg";
+        roomObjects["mrRamoss"]["img"] = "http://i.imgur.com/TXrOUTk.jpg";
+        roomObjects["mrRamos"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.";
+        roomObjects["mrRamoss"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.";
     }
     
     $(".textBox").html(function () {
@@ -2574,6 +2684,7 @@ var readPam = 0;
 var lookedAtTree = 0;
 var climbTree = 0;
 var tut = 0;
+var secTalked = 0;
 
 
 function tutorialSystem(){
@@ -2583,6 +2694,10 @@ function tutorialSystem(){
     
     if(stringSplitted[0] == "pick" && stringSplitted[1] == "up" && stringSplitted[2] == "pamphlet" && currentLocation == "000" || stringSplitted[0] == "take" && stringSplitted[1] == "pamphlet" && currentLocation == "000"){
         pickedUpEver = 1;
+    }
+    
+    if(stringSplitted[0] == "talk" && stringSplitted[1] == "to" && stringSplitted[2] == "security" && stringSplitted[3] == "guard" && currentLocation == "007"){
+        secTalked = 1;
     }
     
     if(stringSplitted[0] == "pick" && stringSplitted[1] == "up" && stringSplitted[2] == "pamphlet" || stringSplitted[0] == "take" && stringSplitted[1] == "pamphlet"){
@@ -2611,6 +2726,9 @@ function tutorialSystem(){
         $(".textBox").append('<br><br><span class="inBoxText" style="color: red;">TUTORIAL</span><span class="inBoxText">: If you want to pick up the pamphlet, type in the white command area below, “pick up pamphlet”.</span>');
     }
     
+    if(currentLocation == "007" && secTalked == 0){
+        $(".textBox").append('<br><br><span class="inBoxText" style="color: red;">TUTORIAL</span><span class="inBoxText">: If you would like to speak to the security guard please type, “talk to security guard”</span>');
+    }
     
     if(pickedUpEver == 1 && withPmaphlet == 1 && readPam == 0){
         $(".textBox").append('<br><br><span class="inBoxText" style="color: red;">TUTORIAL</span><span class="inBoxText">: Now that you’ve got that covered, if you wish to read the pamphlet type in “read pamphlet”</span>');
