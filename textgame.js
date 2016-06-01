@@ -110,7 +110,7 @@ locations["NicholsSt"] = {locationID: "005.1", NE: "005.1", NW: "005.1", SE: "00
 
 
 
-locations["NicholscornerPulaski"] = {locationID: "005.3", NE: "005.3", NW: "005.3", SE: "005.3", SW: "005.3", N: "005.4", E: "005.3", W: "005.1", S: "005.3", U: "005.3", D: "005.3", title: "Corner of Nichols and Pulaski Street", desc: "You are standing at the southeast corner of East Side High School where Nichols and Pulaski Streets meet. To the southwest the facade of St. Casimirs Church rises skyward and to the east is the entrance to Linda’s Portuguese Bakery.", width: "30vw", img: "http://i.imgur.com/FlksLEB.png", look: "none", EN: "As you walk through the threshold of Linda’s Bakery the aroma of fresh bread wafts through your nostrils. You close your eyes and inhale to relish the smel l. When you reopen them you see the long line ahead of you and decide to return later.", NSW: "The door to the church is locked.", SN: "You walk further south on Pulaski until you hit East Kinney Street. You don’t want your visit to East Side High School to end so you turn around and head back."};
+locations["NicholscornerPulaski"] = {locationID: "005.3", NE: "005.3", NW: "005.3", SE: "005.3", SW: "005.3", N: "005.4", E: "005.3", W: "005.1", S: "005.3", U: "005.3", D: "005.3", title: "Corner of Nichols and Pulaski Street", desc: "You are standing at the southeast corner of East Side High School where Nichols and Pulaski Streets meet. To the southwest the facade of St. Casimirs Church rises skyward and to the east is the entrance to Linda’s Portuguese Bakery.", width: "30vw", img: "http://i.imgur.com/NXvfWZ5.png", look: "none", EN: "As you walk through the threshold of Linda’s Bakery the aroma of fresh bread wafts through your nostrils. You close your eyes and inhale to relish the smel l. When you reopen them you see the long line ahead of you and decide to return later.", NSW: "The door to the church is locked.", SN: "You walk further south on Pulaski until you hit East Kinney Street. You don’t want your visit to East Side High School to end so you turn around and head back."};
 
 
 
@@ -2206,7 +2206,7 @@ function commandListSearch(textInput){
         case "enter bakery":
         case "enter lindas bakery":
         case "enter linda's bakery":
-        case "enter lindas":
+        case "enter linda's":
         case "enter lindas":
                 if(currentLocation == "005.3"){
                     $(".textBox").append('<h1 class="inBoxText">As you walk through the threshold of Linda’s Bakery the aroma of fresh bread wafts through your nostrils. You close your eyes and inhale to relish the smell. When you reopen them you see the long line ahead of you and decide to return later.</h1>');
