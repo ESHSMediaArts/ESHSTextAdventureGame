@@ -626,7 +626,7 @@ function southWest(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['NSW'] + '</h1>');
             }
             
-            if(locations[key]['NSW'] == undefined){
+            if(locations[key]['NSW'] == dont){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['SW'] !== currentLocation){
@@ -658,7 +658,7 @@ function southEast(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['NSE'] + '</h1>');
             }
             
-            if(locations[key]['NSE'] == undefined){
+            if(locations[key]['NSE'] == dont){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['SE'] !== currentLocation){
@@ -690,7 +690,7 @@ function northEast(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['NNE'] + '</h1>');
             }
             
-            if(locations[key]['NNE'] == undefined){
+            if(locations[key]['NNE'] == dont){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['NE'] !== currentLocation){
@@ -722,7 +722,7 @@ function northWest(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['NNW'] + '</h1>');
             }
             
-            if(locations[key]['NNW'] == undefined){
+            if(locations[key]['NNW'] == dont){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['NW'] !== currentLocation){
@@ -755,7 +755,7 @@ function north(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['NN'] + '</h1>');
             }
             
-            if(locations[key]['NN'] == undefined){
+            if(locations[key]['NN'] == dont){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['N'] !== currentLocation){
@@ -787,7 +787,7 @@ function south(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['SN'] + '</h1>');
             }
             
-            if(locations[key]['SN'] == undefined){
+            if(locations[key]['SN'] == dont){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['S'] !== currentLocation){
@@ -819,7 +819,7 @@ function east(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['EN'] + '</h1>');
             }
             
-            if(locations[key]['EN'] == undefined){
+            if(locations[key]['EN'] == dont){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['E'] !== currentLocation){
@@ -851,7 +851,7 @@ function west(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['WN'] + '</h1>');
             }
             
-            if(locations[key]['WN'] == undefined){
+            if(locations[key]['WN'] == dont){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['W'] !== currentLocation){
@@ -883,7 +883,7 @@ function up(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['UN'] + '</h1>');
             }
             
-            if(locations[key]['UN'] == undefined){
+            if(locations[key]['UN'] == dont){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['U'] !== currentLocation){
@@ -914,7 +914,7 @@ function down(){
                 $(".textBox").append('<h1 class="inBoxText">' + locations[key]['DN'] + '</h1>');
             }
             
-            if(locations[key]['DN'] == undefined){
+            if(locations[key]['DN'] == dont){
                 $(".lci").attr("src", "http://i.imgur.com/d11XsOS.png");
             }
             if(locations[key]['D'] !== currentLocation){
@@ -2567,7 +2567,7 @@ function commandListSearch(textInput){
     }
     
     $(".textBox").html(function () {
-        return $(this).html().replace("undefined", "Security guard, Carlos Ortiz, steps in front of you, blocks your path, crosses his arms and says “Can’t go this way, you’re gonna have to wait for the expansion.”"); 
+        return $(this).html().replace("undefined", "You cant go that go."); 
     });
     
     scroller();
