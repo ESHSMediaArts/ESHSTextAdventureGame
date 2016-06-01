@@ -2210,6 +2210,7 @@ function commandListSearch(textInput){
         case "enter lindas":
                 if(currentLocation == "005.3"){
                     $(".textBox").append('<h1 class="inBoxText">As you walk through the threshold of Linda’s Bakery the aroma of fresh bread wafts through your nostrils. You close your eyes and inhale to relish the smell. When you reopen them you see the long line ahead of you and decide to return later.</h1>');
+                    $(".lci").attr("src", "http://i.imgur.com/Y7aGze0.jpg");
                 }else{
                     $(".textBox").append('<h1 class="inBoxText">There is no bakery here.</h1>');
                 }
@@ -2591,7 +2592,7 @@ function commandListSearch(textInput){
     }
     
     $(".textBox").html(function () {
-        return $(this).html().replace("undefined", "You cant go that go."); 
+        return $(this).html().replace("undefined", "You cant go that way."); 
     });
     
     scroller();
