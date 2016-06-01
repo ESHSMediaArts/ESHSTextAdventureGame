@@ -2246,6 +2246,7 @@ function commandListSearch(textInput){
         case "enter building":
         case "enter east side":
         case "enter school":
+        case "enter":
                 if(currentLocation == "003"){
                     east();
                 }else{
