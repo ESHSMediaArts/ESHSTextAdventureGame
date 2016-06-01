@@ -110,7 +110,7 @@ locations["NicholsSt"] = {locationID: "005.1", NE: "005.1", NW: "005.1", SE: "00
 
 
 
-locations["NicholscornerPulaski"] = {locationID: "005.3", NE: "005.3", NW: "005.3", SE: "005.3", SW: "005.3", N: "005.4", E: "005.3", W: "005.1", S: "005.3", U: "005.3", D: "005.3", title: "Corner of Nichols and Pulaski Street", desc: "You are standing at the southeast corner of East Side High School where Nichols and Pulaski Streets meet. To the southwest the facade of St. Casimirs Church rises skyward and to the east is the entrance to Linda’s Portuguese Bakery.", width: "30vw", img: "http://i.imgur.com/sU5jIWa.png", look: "none", EN: "As you walk through the threshold of Linda’s Bakery the aroma of fresh bread wafts through your nostrils. You close your eyes and inhale to relish the smel l. When you reopen them you see the long line ahead of you and decide to return later.", NSW: "The door to the church is locked.", SN: "You walk further south on Pulaski until you hit East Kinney Street. You don’t want your visit to East Side High School to end so you turn around and head back."};
+locations["NicholscornerPulaski"] = {locationID: "005.3", NE: "005.3", NW: "005.3", SE: "005.3", SW: "005.3", N: "005.4", E: "005.3", W: "005.1", S: "005.3", U: "005.3", D: "005.3", title: "Corner of Nichols and Pulaski Street", desc: "You are standing at the southeast corner of East Side High School where Nichols and Pulaski Streets meet. To the southwest the facade of St. Casimirs Church rises skyward and to the east is the entrance to Linda’s Portuguese Bakery.", width: "30vw", img: "http://i.imgur.com/FlksLEB.png", look: "none", EN: "As you walk through the threshold of Linda’s Bakery the aroma of fresh bread wafts through your nostrils. You close your eyes and inhale to relish the smel l. When you reopen them you see the long line ahead of you and decide to return later.", NSW: "The door to the church is locked.", SN: "You walk further south on Pulaski until you hit East Kinney Street. You don’t want your visit to East Side High School to end so you turn around and head back."};
 
 
 
@@ -259,7 +259,10 @@ talkCharacters["mrRamos"] = {
     
     name: "mr ramos",
     name2: "security guard",
-    name3: "ramos",
+    name3: "mr. ramos",
+    name4: "ramos",
+    name5: "security",
+    name6: "guard",
     
     talking: "false", 
     
@@ -286,6 +289,7 @@ talkCharacters["mrRamos"] = {
     
     aImg: "http://i.imgur.com/pUMBLhA.jpg",
     bImg: "http://i.imgur.com/pUMBLhA.jpg",
+    cImg: "http://i.imgur.com/kwtrIsP.png",
     baImg: "http://i.imgur.com/pUMBLhA.jpg",
     bbImg: "http://i.imgur.com/6yiBSzI.jpg",
     
@@ -514,6 +518,8 @@ roomObjects["sculpture2"] = {locationID: "007", name: "animodule", name2: "-----
 roomObjects["mrRamos"] = {locationID: "007", name: "Security Guard", name2: "Mr Ramos", visible: "yes", numDesc: 1, desc1: "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.", img: "http://i.imgur.com/TXrOUTk.jpg", width: "30vw"}
 
 roomObjects["mrRamoss"] = {locationID: "007", name: "Mr. Ramos", name2: "Ramos", visible: "yes", numDesc: 1, desc1: "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.", img: "http://i.imgur.com/TXrOUTk.jpg", width: "30vw"}
+
+roomObjects["mrRamosss"] = {locationID: "007", name: "Guard", name2: "Security", visible: "yes", numDesc: 1, desc1: "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.", img: "http://i.imgur.com/TXrOUTk.jpg", width: "30vw"}
 
 roomObjects["school"] = {locationID: "003", name: "School", name2: "Building", visible: "yes", numDesc: 1, desc1: "The large brick school rises four stories in front of you. There is a banner on the side of the building daring you to be great!", width: "30vw"}
 
@@ -945,7 +951,7 @@ function talkStart(){
     var stringSplitted = string.split(" ");
     
     $.each( talkCharacters, function( key, value ) {
-        if((stringSplitted[2] == talkCharacters[key]["name"] || stringSplitted[2] == talkCharacters[key]["name2"] || stringSplitted[2] == talkCharacters[key]["name3"]) && currentLocation == talkCharacters[key]["locationID"]){
+        if((stringSplitted[2] == talkCharacters[key]["name"] || stringSplitted[2] == talkCharacters[key]["name2"] || stringSplitted[2] == talkCharacters[key]["name3"] || stringSplitted[2] == talkCharacters[key]["name4"] || stringSplitted[2] == talkCharacters[key]["name5"]) && currentLocation == talkCharacters[key]["locationID"]){
             $(".choicesHolder").html(talkCharacters[key]["start"]);
             $(".choicesHolder").css({visibility: "visible"});
             talkingTo = talkCharacters[key]["name"];
@@ -2038,6 +2044,7 @@ function commandListSearch(textInput){
     
     switch(textInput){
         case "fill watering can":
+        case "fill can":
                 if(inventory["empty"]["locationID"] == "9999"){
                     if(currentLocation == "009.1"){
                         $(".textBox").append('<h1 class="inBoxText">You filled the watering can to the brim.</h1>');
@@ -2542,8 +2549,10 @@ function commandListSearch(textInput){
         roomObjects["mrRamos"]["img"] = "http://i.imgur.com/6yiBSzI.jpg";
         talkCharacters["mrRamos"]["StartImg"] = "http://i.imgur.com/6yiBSzI.jpg";
         roomObjects["mrRamoss"]["img"] = "http://i.imgur.com/6yiBSzI.jpg";
+        roomObjects["mrRamosss"]["img"] = "http://i.imgur.com/6yiBSzI.jpg";
         roomObjects["mrRamos"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos.";
         roomObjects["mrRamoss"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos.";
+        roomObjects["mrRamosss"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos.";
     }
     
     if(inventory["idCard"]["locationID"] !== "9999"){
@@ -2551,8 +2560,10 @@ function commandListSearch(textInput){
         roomObjects["mrRamos"]["img"] = "http://i.imgur.com/TXrOUTk.jpg";
         talkCharacters["mrRamos"]["StartImg"] = "http://i.imgur.com/TXrOUTk.jpg";
         roomObjects["mrRamoss"]["img"] = "http://i.imgur.com/TXrOUTk.jpg";
+        roomObjects["mrRamosss"]["img"] = "http://i.imgur.com/TXrOUTk.jpg";
         roomObjects["mrRamos"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.";
         roomObjects["mrRamoss"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.";
+        roomObjects["mrRamosss"]["desc1"] = "The security guard’s name tag identifies him as Mr. Ramos. He is examining you as carefully as you are examining him.";
     }
     
     $(".textBox").html(function () {
