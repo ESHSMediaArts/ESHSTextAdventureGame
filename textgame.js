@@ -2225,10 +2225,20 @@ function commandListSearch(textInput){
                 return;
         case "enter house":
         case "enter green house":
-                if(currentLocation == "005.3"){
+                if(currentLocation == "005.4"){
                     $(".textBox").append('<h1 class="inBoxText">Even if the front door of this spooky house wasn’t boarded up you probably wouldn’t have the courage to go inside.</h1>');
+                    $(".lci").attr("src", "http://i.imgur.com/GBTQKWh.jpg");
                 }else{
                     $(".textBox").append('<h1 class="inBoxText">There is no house here.</h1>');
+                }
+                break;
+                return;
+        case "read menu":
+                if(currentLocation == "004.1"){
+                    $(".textBox").append('<h1 class="inBoxText">The menu lists a variety of tasty offerings, but the final item catches your eye: “East Side Student Special! Italian Hotdog - 1 ESHS token. Student ID required.”</h1>');
+                    $(".lci").attr("src", "http://i.imgur.com/ylwzlzP.jpg");
+                }else{
+                    $(".textBox").append('<h1 class="inBoxText">There is no menu here.</h1>');
                 }
                 break;
                 return;
