@@ -2200,6 +2200,9 @@ function commandListSearch(textInput){
                 return;
         case "enter bakery":
         case "enter lindas bakery":
+        case "enter linda's bakery":
+        case "enter lindas":
+        case "enter lindas":
                 if(currentLocation == "005.3"){
                     $(".textBox").append('<h1 class="inBoxText">As you walk through the threshold of Linda’s Bakery the aroma of fresh bread wafts through your nostrils. You close your eyes and inhale to relish the smell. When you reopen them you see the long line ahead of you and decide to return later.</h1>');
                 }else{
