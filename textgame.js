@@ -156,7 +156,7 @@ locations["stairway"] = {locationID: "014", NE: "014", NW: "014", SE: "014", SW:
 
 
 
-locations["guidance"] = {locationID: "020", NE: "020", NW: "020", SE: "020", SW: "020", N: "020", E: "021", W: "009.1", S: "020", U: "020", D: "020", title: "GUIDANCE OFFICE", desc: "", width: "30vw", img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4sW0ki48RAx0qh3OX44OUa_hEYsnbfSo-1qzgGwvJau3F1BKkDA", look: "none"};
+locations["guidance"] = {locationID: "020", NE: "020", NW: "020", SE: "020", SW: "020", N: "020", E: "021", W: "009.1", S: "020", U: "020", D: "020", title: "GUIDANCE OFFICE", desc: "", width: "30vw", img: "http://i.imgur.com/E8g7IwE.png", look: "none"};
 
 locations["IdOffice"] = {locationID: "021", NE: "021", NW: "021", SE: "021", SW: "021", N: "021", E: "021", W: "020", S: "021", U: "021", D: "021", title: "ID OFFICE", desc: 'You find Mr. Rodriguez in this small side room fiddling with the ID printer. A large sign on the wall reads: "REPLACEMENT ID - 1 ESHS token."', width: "30vw", img: "http://i.imgur.com/b880rhe.jpg", look: "none"};
 
