@@ -144,9 +144,15 @@ locations["hallWay1"] = {locationID: "009.2", NE: "009.2", NW: "009.2", SE: "009
 locations["hallWay2"] = {locationID: "009.3", NE: "009.3", NW: "009.3", SE: "009.3", SW: "009.3", N: "009.2", E: "", W: "", S: "014", U: "009.3", D: "009.3", title: "Hallway", desc: "You are at the south end of the hallway located just outside the main office. To the west is a doorway to the principal’s conference room and to the east is a door to another office. To the southeast is a stairway leading up.", width: "30vw", img: "http://i.imgur.com/aOpxOgE.jpg", look: "none"};
 
 
-locations["mainoffice"] = {locationID: "012", NE: "012", NW: "013", SE: "012", SW: "012", N: "012", E: "009.1", W: "012", S: "012", U: "012", D: "012", title: "Main Office", desc: "A long counter runs the length of East Side’s main office. On the other side, you see a secretary at her desk, going about her duties.  On this side of the counter, there is a bench for waiting visitors, and a screen with digital signage showing information about school events. There is a gap in the counter to the northwest so you can make it to the other side and the office narrows and continues to the south.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none", WN: "The long counter blocks your way, although there is a gap in the counter to the northwest."};
+locations["mainoffice"] = {locationID: "012", NE: "012", NW: "012", SE: "012", SW: "012", N: "012", E: "009.1", W: "012", S: "012.2", U: "012", D: "012", title: "Main Office", desc: "A long counter runs the length of East Side’s main office. On the other side, you see a secretary at her desk, going about her duties.  On this side of the counter, there is a bench for waiting visitors, and a screen with digital signage showing information about school events. There is a gap in the counter to the northwest so you can make it to the other side and the office narrows and continues to the south.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none", WN: "The long counter blocks your way, although there is a gap in the counter to the northwest."};
 
-locations["behindDesk"] = {locationID: "013", NE: "013", NW: "013", SE: "013", SW: "013", N: "013", E: "012", W: "013", S: "012", U: "013", D: "013", title: "Main Office", desc: "", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
+locations["behindDesk"] = {locationID: "012.1", NE: "012.1", NW: "012.1", SE: "012.1", SW: "012.1", N: "012.1", E: "012", W: "012.1", S: "012", U: "012.1", D: "012.1", title: "Behind Counter", desc: "You are on the other side of the counter in the main office. There are desks and phones and all of the other items needed to make sure the school runs smoothly. Ms. Riggins is here at her desk and the intercom system on a small shelf.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
+
+locations["smo"] = {locationID: "012.3", NE: "012.3", NW: "012.3", SE: "012.3", SW: "012.3", N: "012.2", E: "012.3", W: "012.3", S: "012.4", U: "012.3", D: "012.3", title: "Main Office", desc: "You are at the southern end of the main office. To the west there is a doorway to Ms. Zayas’ office, to the south a second one leading to the principal’s office and third eastward towards the hallway. Along the east wall there sits the archetypal bench always a feature outside of a principal’s office that often elicits frightful memories of a misspent youth.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
+
+locations["mmo"] = {locationID: "012.2", NE: "012.2", NW: "012.2", SE: "012.2", SW: "012.2", N: "012", E: "012.2", W: "012.2", S: "012.3", U: "012.2", D: "012.2", title: "Main Office", desc: "To the east there is an array of wooden cubby holes serving as faculty mailboxes. To the west, there is a door that is slightly ajar and inside you can see Ms. Cordero focusing on an exceptionally large stack of paperwork. The office continues to the north and south.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
+
+locations["principalsOffice"] = {locationID: "012.4", NE: "012.4", NW: "012.4", SE: "012.4", SW: "012.4", N: "012.3", E: "012.4", W: "012.4", S: "012.4", U: "012.4", D: "012.4", title: "Principal’s Office", desc: "East Side High School’s principal, Dr. Mario Santos is here at his desk responding to his email.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
 
 
 
@@ -250,6 +256,43 @@ talkCharacters["dummy"] = {
     aEvent: "none",
     bEvent: "none",
     
+    
+}
+
+
+talkCharacters["msriggins"] = {
+    locationID: "012",
+    
+    name: "ms riggins", 
+    name2: "ms. riggins", 
+    name3: "riggins", 
+    name4: "secretary", 
+    
+    talking: "false", 
+    
+    start: '<div class="choiceOne" id="a"><h1>1. I would like to make an announcement.</h1></div><div class="choiceTwo" id="b"><h1>2. I would like to see the principal</h1></div><div class="choiceThree" id="c"><h1>3. Do you know where I can find the guidance office?</h1></div>', 
+    
+    startOpen: 'How may I help you?',
+    startImg: "http://i.imgur.com/bQtRjWY.jpg",
+    
+    a:'<div class="choiceOne" id="aa"><h1>1. I have the announcement here.</h1></div><div class="choiceTwo" id="ab"><h1>2. C’mon, I’m going to say something really funny.</h1></div><div class="choiceThree" id="c"><h1></h1></div>', 
+    b:' ',
+    c:' ',
+    
+    aOpen: 'You must have permission from the principal to make an announcement.', 
+    bOpen: 'The principal’s office is past the mailboxes to the south. (pointy pic)', 
+    cOpen: 'The guidance office is across the hall. Have a great day.', 
+    
+    aaOpen: 'You can’t pull one over on me!', 
+    abOpen: 'The rules apply to everyone and we are very busy here, so if there is nothing else…', 
+    
+    bImg: "http://i.imgur.com/Iqy8rWg.jpg",
+    cImg: "http://i.imgur.com/bQtRjWY.jpg",
+    aaImg: "http://i.imgur.com/qf5DCWJ.jpg",
+    abImg: "http://i.imgur.com/qf5DCWJ.jpg",
+    
+    aEvent: "none",
+    bEvent: "none",
     
 }
 
@@ -472,6 +515,10 @@ inventory["fish"] = {locationID: "008", name: "fish", name2: "----------3--3--3-
 var roomObjects = {};
 
 roomObjects[""] = {locationID: "", name: "", visible: "", name2: "--3---2--1---2-3---2-2-45--f-f-", numDesc: 0, desc1: '', img: "", width: "30vw"}
+
+roomObjects["riggins"] = {locationID: "012", name: "riggins", visible: "yes", name2: "secretary", numDesc: 1, desc1: 'Ms. Riggins is hard at work wading through an unusually large stack of forms.', img: "http://i.imgur.com/bQtRjWY.jpg", width: "30vw"}
+
+roomObjects["rigginss"] = {locationID: "012", name: "ms riggins", visible: "yes", name2: "ms. riggins", numDesc: 1, desc1: 'Ms. Riggins is hard at work wading through an unusually large stack of forms.', img: "http://i.imgur.com/bQtRjWY.jpg", width: "30vw"}
 
 roomObjects["screen"] = {locationID: "008", name: "digital signage", visible: "yes", name2: "screen", numDesc: 8, desc1: 'Playing on the screen are highlights from last week’s girl’s soccer team win over Science High.', desc2: 'Along with some simple clip art, the digital signage reads: “Join the Guitar Club! Every Monday 3pm through 4pm in room 414. Advisor: Mr. Arndt.”', desc3: 'The screen is presenting a cross-dissolve slideshow of last year’s National Honors Society trip to Niagara Falls. All the students seemed to still be smiling even though they are soaking wet.', desc4: 'There is a slide encouraging students to join the chess club.', desc5: 'There is a photograph of Mr. Klasner wearing a cape and colorful tights that are a little too tight with the caption: “Be a Hero Join the Comic Book Club”', desc6: 'An anti-bullying PSA created by Ms. Saraswat`s Video Production class is playing on the monitor.', desc7: 'There is a slideshow of the fencing team in practice.', desc8: 'There are photographs of the East Side Lacrosse Team in action.', width: "30vw"}
 
@@ -2642,6 +2689,20 @@ function commandListSearch(textInput){
 
 
 function eventPlayer(){
+    randomNum1s5 = Math.floor(Math.random() * 5) + 1;
+    if(currentLocation == "012.4"){
+        if(randomNum13 == 1){
+            $(".textBox").append('<h1 class="inBoxText">Dr. Santos looks up from his desk and says, “Dare To Be Great!”</h1>');
+        }else if(randomNum13 == 2){
+            $(".textBox").append('<h1 class="inBoxText">Dr. Santos recites the Three R’s, “Respect, Responsibility, Results!”</h1>');
+        }else if(randomNum13 == 3){
+            $(".textBox").append('<h1 class="inBoxText">The principal look at you and declares, “Remember, The Choice IS Yours!”</h1>');
+        }else if(randomNum13 == 4){
+            $(".textBox").append('<h1 class="inBoxText">“Once and East Sider, Always and East Sider!” the principal declares as he rises from his desk and points to the sky.</h1>');
+        }else if(randomNum13 == 5){
+            $(".textBox").append('<h1 class="inBoxText">“We are ON THE ROAD TO GREATNESS!” the principal emphatically asserts.</h1>');
+        }
+    }
     $.each( events, function( key, value ) {
         if(currentLocation == events[key]["locationID"] && events[key]["chanceFunction"] == "true" && events[key]["playable"] == "true" && events[key]["chance"] !== "notChance"){
             chanceNum = Math.floor((((Math.random() * 10) + 1) * events[key]["chance"]) * 10) / 10;
