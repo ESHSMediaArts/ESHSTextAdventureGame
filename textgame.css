@@ -100,7 +100,7 @@ body {
   font-size: 0.9vw;
   font-family: "Arial";
   left: 3.9vw;
-  top: 46.3vw;
+  top: 46.5vw;
   position: absolute;
   color: #C8C8C8;
 }
@@ -113,7 +113,7 @@ body {
 .textBox {
   overflow: auto;
   background-color: black;
-  margin-top: 3.9vw;
+  margin-top: 3.5vw;
   height: 40vw;
   width: 61.5vw;
   position: relative;
