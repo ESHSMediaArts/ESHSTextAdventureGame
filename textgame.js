@@ -144,7 +144,7 @@ locations["hallWay1"] = {locationID: "009.2", NE: "009.2", NW: "009.2", SE: "009
 locations["hallWay2"] = {locationID: "009.3", NE: "009.3", NW: "009.3", SE: "009.3", SW: "009.3", N: "009.2", E: "", W: "", S: "014", U: "009.3", D: "009.3", title: "Hallway", desc: "You are at the south end of the hallway located just outside the main office. To the west is a doorway to the principal’s conference room and to the east is a door to another office. To the southeast is a stairway leading up.", width: "30vw", img: "http://i.imgur.com/aOpxOgE.jpg", look: "none"};
 
 
-locations["mainoffice"] = {locationID: "012", NE: "012", NW: "012", SE: "012", SW: "012", N: "012", E: "009.1", W: "013", S: "012", U: "012", D: "012", title: "Main Office", desc: "A long counter runs the length of East Side’s main office. On the other side, you see a secretary at her desk, going about her duties.  On this side of the counter, there is a bench for waiting visitors, and a screen with digital signage showing information about school events. There is a gap in the counter to the northwest so you can make it to the other side and the office narrows and continues to the south.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
+locations["mainoffice"] = {locationID: "012", NE: "012", NW: "013", SE: "012", SW: "012", N: "012", E: "009.1", W: "012", S: "012", U: "012", D: "012", title: "Main Office", desc: "A long counter runs the length of East Side’s main office. On the other side, you see a secretary at her desk, going about her duties.  On this side of the counter, there is a bench for waiting visitors, and a screen with digital signage showing information about school events. There is a gap in the counter to the northwest so you can make it to the other side and the office narrows and continues to the south.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none", WN: "The long counter blocks your way, although there is a gap in the counter to the northwest."};
 
 locations["behindDesk"] = {locationID: "013", NE: "013", NW: "013", SE: "013", SW: "013", N: "013", E: "012", W: "013", S: "012", U: "013", D: "013", title: "Main Office", desc: "", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
 
@@ -476,6 +476,10 @@ roomObjects[""] = {locationID: "", name: "", visible: "", name2: "--3---2--1---2
 roomObjects["screen"] = {locationID: "008", name: "digital signage", visible: "yes", name2: "screen", numDesc: 8, desc1: 'Playing on the screen are highlights from last week’s girl’s soccer team win over Science High.', desc2: 'Along with some simple clip art, the digital signage reads: “Join the Guitar Club! Every Monday 3pm through 4pm in room 414. Advisor: Mr. Arndt.”', desc3: 'The screen is presenting a cross-dissolve slideshow of last year’s National Honors Society trip to Niagara Falls. All the students seemed to still be smiling even though they are soaking wet.', desc4: 'There is a slide encouraging students to join the chess club.', desc5: 'There is a photograph of Mr. Klasner wearing a cape and colorful tights that are a little too tight with the caption: “Be a Hero Join the Comic Book Club”', desc6: 'An anti-bullying PSA created by Ms. Saraswat`s Video Production class is playing on the monitor.', desc7: 'There is a slideshow of the fencing team in practice.', desc8: 'There are photographs of the East Side Lacrosse Team in action.', width: "30vw"}
 
 roomObjects["screenn"] = {locationID: "008", name: "sign", visible: "yes", name2: "signage", numDesc: 8, desc1: 'Playing on the screen are highlights from last week’s girl’s soccer team win over Science High.', desc2: 'Along with some simple clip art, the digital signage reads: “Join the Guitar Club! Every Monday 3pm through 4pm in room 414. Advisor: Mr. Arndt.”', desc3: 'The screen is presenting a cross-dissolve slideshow of last year’s National Honors Society trip to Niagara Falls. All the students seemed to still be smiling even though they are soaking wet.', desc4: 'There is a slide encouraging students to join the chess club.', desc5: 'There is a photograph of Mr. Klasner wearing a cape and colorful tights that are a little too tight with the caption: “Be a Hero Join the Comic Book Club”', desc6: 'An anti-bullying PSA created by Ms. Saraswat`s Video Production class is playing on the monitor.', desc7: 'There is a slideshow of the fencing team in practice.', desc8: 'There are photographs of the East Side Lacrosse Team in action.', width: "30vw"}
+
+roomObjects["screens"] = {locationID: "012", name: "digital signage", visible: "yes", name2: "screen", numDesc: 8, desc1: 'Playing on the screen are highlights from last week’s girl’s soccer team win over Science High.', desc2: 'Along with some simple clip art, the digital signage reads: “Join the Guitar Club! Every Monday 3pm through 4pm in room 414. Advisor: Mr. Arndt.”', desc3: 'The screen is presenting a cross-dissolve slideshow of last year’s National Honors Society trip to Niagara Falls. All the students seemed to still be smiling even though they are soaking wet.', desc4: 'There is a slide encouraging students to join the chess club.', desc5: 'There is a photograph of Mr. Klasner wearing a cape and colorful tights that are a little too tight with the caption: “Be a Hero Join the Comic Book Club”', desc6: 'An anti-bullying PSA created by Ms. Saraswat`s Video Production class is playing on the monitor.', desc7: 'There is a slideshow of the fencing team in practice.', desc8: 'There are photographs of the East Side Lacrosse Team in action.', width: "30vw"}
+
+roomObjects["screenns"] = {locationID: "012", name: "sign", visible: "yes", name2: "signage", numDesc: 8, desc1: 'Playing on the screen are highlights from last week’s girl’s soccer team win over Science High.', desc2: 'Along with some simple clip art, the digital signage reads: “Join the Guitar Club! Every Monday 3pm through 4pm in room 414. Advisor: Mr. Arndt.”', desc3: 'The screen is presenting a cross-dissolve slideshow of last year’s National Honors Society trip to Niagara Falls. All the students seemed to still be smiling even though they are soaking wet.', desc4: 'There is a slide encouraging students to join the chess club.', desc5: 'There is a photograph of Mr. Klasner wearing a cape and colorful tights that are a little too tight with the caption: “Be a Hero Join the Comic Book Club”', desc6: 'An anti-bullying PSA created by Ms. Saraswat`s Video Production class is playing on the monitor.', desc7: 'There is a slideshow of the fencing team in practice.', desc8: 'There are photographs of the East Side Lacrosse Team in action.', width: "30vw"}
 
 roomObjects["hotDogTruck"] = {locationID: "004", name: "truck", visible: "yes", name2: "hotdog truck", numDesc: 1, desc1: 'This vintage hotdog truck has been a feature of the park for years. Proudly painted, the side of the truck reads: "DEO`s ITALIAN HOTDOGS".', img: "http://i.imgur.com/RClF0kG.jpg", width: "30vw"}
 
@@ -2134,20 +2138,39 @@ function commandListSearch(textInput){
                 break;
                 return;
         case "sit on bench":
+        case "sit":
+        case "take a seat":
         case "sit on red bench":
-                if(currentLocation == "025" && northMove == true){
-                    $(".textBox").append('<h1 class="inBoxText">You seat yourself on the bench and decide to soak it all in.</h1>');
-                    northMove = false;
-                    eastMove = false;
-                    westMove = false;
-                    southMove = false;
-                    upMove = false;
-                    downMove = false;
-                    nehMove = false;
-                    seMove = false;
-                    nwMove = false;
-                    swMove = false;
-                    reasonNoMove = "You are sitting down. Please stand up first to move.";
+                if(northMove == true && (currentLocation == "025" || currentLocation == "012")){
+                    if(currentLocation == "025"){
+                        $(".textBox").append('<h1 class="inBoxText">You seat yourself on the bench and decide to soak it all in.</h1>');
+                        northMove = false;
+                        eastMove = false;
+                        westMove = false;
+                        southMove = false;
+                        upMove = false;
+                        downMove = false;
+                        nehMove = false;
+                        seMove = false;
+                        nwMove = false;
+                        swMove = false;
+                        reasonNoMove = "You are sitting down. Please stand up first to move.";
+                    }
+                    
+                    if(currentLocation == "012"){
+                        $(".textBox").append('<h1 class="inBoxText">You take a seat.</h1>');
+                        northMove = false;
+                        eastMove = false;
+                        westMove = false;
+                        southMove = false;
+                        upMove = false;
+                        downMove = false;
+                        nehMove = false;
+                        seMove = false;
+                        nwMove = false;
+                        swMove = false;
+                        reasonNoMove = "You are sitting down. Please stand up first to move.";
+                    }
                 } else {
                     $(".textBox").append('<h1 class="inBoxText">There is no bench here.</h1>');
                 }
@@ -2156,7 +2179,7 @@ function commandListSearch(textInput){
         case "stand":
         case "stand up":
         case "get off bench":
-                if(currentLocation == "025" && northMove == false){
+                if((currentLocation == "025" || currentLocation == "012") && northMove == false){
                     $(".textBox").append('<h1 class="inBoxText">You stand up.</h1>');
                     northMove = true;
                     eastMove = true;
