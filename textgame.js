@@ -144,7 +144,7 @@ locations["hallWay1"] = {locationID: "009.2", NE: "009.2", NW: "009.2", SE: "009
 locations["hallWay2"] = {locationID: "009.3", NE: "009.3", NW: "009.3", SE: "009.3", SW: "009.3", N: "009.2", E: "", W: "", S: "014", U: "009.3", D: "009.3", title: "Hallway", desc: "You are at the south end of the hallway located just outside the main office. To the west is a doorway to the principal’s conference room and to the east is a door to another office. To the southeast is a stairway leading up.", width: "30vw", img: "http://i.imgur.com/aOpxOgE.jpg", look: "none"};
 
 
-locations["mainoffice"] = {locationID: "012", NE: "012", NW: "012", SE: "012", SW: "012", N: "012", E: "009.1", W: "013", S: "012", U: "012", D: "012", title: "Main Office", desc: "", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
+locations["mainoffice"] = {locationID: "012", NE: "012", NW: "012", SE: "012", SW: "012", N: "012", E: "009.1", W: "013", S: "012", U: "012", D: "012", title: "Main Office", desc: "A long counter runs the length of East Side’s main office. On the other side, you see a secretary at her desk, going about her duties.  On this side of the counter, there is a bench for waiting visitors, and a screen with digital signage showing information about school events. There is a gap in the counter to the northwest so you can make it to the other side and the office narrows and continues to the south.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
 
 locations["behindDesk"] = {locationID: "013", NE: "013", NW: "013", SE: "013", SW: "013", N: "013", E: "012", W: "013", S: "012", U: "013", D: "013", title: "Main Office", desc: "", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
 
@@ -2048,6 +2048,14 @@ function commandListSearch(textInput){
     };
     
     switch(textInput){
+        case "throw stick":
+                if(inventory["stick"]["locationID"] == "9999"){
+                    $(".textBox").append('<h1 class="inBoxText">That’s how someone loses an eye!</h1>');
+                } else {
+                    $(".textBox").append('<h1 class="inBoxText">You dont have a stick.</h1>');
+                }
+                break;
+                return;
         case "fill watering can":
         case "fill can":
                 if(inventory["empty"]["locationID"] == "9999"){
