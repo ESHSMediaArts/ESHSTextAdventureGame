@@ -956,7 +956,7 @@ function talkStart(){
     var stringSplitted = string.split(" ");
     
     $.each( talkCharacters, function( key, value ) {
-        if((stringSplitted[2] == talkCharacters[key]["name"] || stringSplitted[2] == talkCharacters[key]["name2"] || stringSplitted[2] == talkCharacters[key]["name3"] || stringSplitted[2] == talkCharacters[key]["name4"] || stringSplitted[2] == talkCharacters[key]["name5"]) && currentLocation == talkCharacters[key]["locationID"]){
+        if((stringSplitted[2] == talkCharacters[key]["name"] || stringSplitted[2] == talkCharacters[key]["name2"] || stringSplitted[2] == talkCharacters[key]["name3"] || stringSplitted[2] == talkCharacters[key]["name4"] || stringSplitted[2] == talkCharacters[key]["name5"] || stringSplitted[2] == talkCharacters[key]["name6"]) && currentLocation == talkCharacters[key]["locationID"]){
             $(".choicesHolder").html(talkCharacters[key]["start"]);
             $(".choicesHolder").css({visibility: "visible"});
             talkingTo = talkCharacters[key]["name"];
