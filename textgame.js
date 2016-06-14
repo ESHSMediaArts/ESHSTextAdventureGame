@@ -144,13 +144,13 @@ locations["hallWay1"] = {locationID: "009.2", NE: "009.2", NW: "009.2", SE: "009
 locations["hallWay2"] = {locationID: "009.3", NE: "009.3", NW: "009.3", SE: "009.3", SW: "009.3", N: "009.2", E: "", W: "", S: "014", U: "009.3", D: "009.3", title: "Hallway", desc: "You are at the south end of the hallway located just outside the main office. To the west is a doorway to the principal’s conference room and to the east is a door to another office. To the southeast is a stairway leading up.", width: "30vw", img: "http://i.imgur.com/aOpxOgE.jpg", look: "none"};
 
 
-locations["mainoffice"] = {locationID: "012", NE: "012", NW: "012", SE: "012", SW: "012", N: "012", E: "009.1", W: "012", S: "012.2", U: "012", D: "012", title: "Main Office", desc: "A long counter runs the length of East Side’s main office. On the other side, you see a secretary at her desk, going about her duties.  On this side of the counter, there is a bench for waiting visitors, and a screen with digital signage showing information about school events. There is a gap in the counter to the northwest so you can make it to the other side and the office narrows and continues to the south.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none", WN: "The long counter blocks your way, although there is a gap in the counter to the northwest."};
+locations["mainoffice"] = {locationID: "012", NE: "012", NW: "012", SE: "012", SW: "012", N: "012", E: "009.1", W: "012", S: "012.2", U: "012", D: "012", title: "Main Office", desc: "A long counter runs the length of East Side’s main office. On the other side, you see a secretary at her desk, going about her duties.  On this side of the counter, there is a bench for waiting visitors, and a screen with digital signage showing information about school events. There is a gap in the counter to the northwest so you can make it to the other side and the office narrows and continues to the south.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none", WN: "The long counter blocks your way, although there is a gap in the counter to the northwest.", NNW: "Please stay behind the counter, this area is for secretarial staff only, and "};
 
 locations["behindDesk"] = {locationID: "012.1", NE: "012.1", NW: "012.1", SE: "012.1", SW: "012.1", N: "012.1", E: "012", W: "012.1", S: "012", U: "012.1", D: "012.1", title: "Behind Counter", desc: "You are on the other side of the counter in the main office. There are desks and phones and all of the other items needed to make sure the school runs smoothly. Ms. Riggins is here at her desk and the intercom system on a small shelf.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
 
 locations["smo"] = {locationID: "012.3", NE: "012.3", NW: "012.3", SE: "012.3", SW: "012.3", N: "012.2", E: "012.3", W: "012.3", S: "012.4", U: "012.3", D: "012.3", title: "Main Office", desc: "You are at the southern end of the main office. To the west there is a doorway to Ms. Zayas’ office, to the south a second one leading to the principal’s office and third eastward towards the hallway. Along the east wall there sits the archetypal bench always a feature outside of a principal’s office that often elicits frightful memories of a misspent youth.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
 
-locations["mmo"] = {locationID: "012.2", NE: "012.2", NW: "012.2", SE: "012.2", SW: "012.2", N: "012", E: "012.2", W: "012.2", S: "012.3", U: "012.2", D: "012.2", title: "Main Office", desc: "To the east there is an array of wooden cubby holes serving as faculty mailboxes. To the west, there is a door that is slightly ajar and inside you can see Ms. Cordero focusing on an exceptionally large stack of paperwork. The office continues to the north and south.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
+locations["mmo"] = {locationID: "012.2", NE: "012.2", NW: "012.2", SE: "012.2", SW: "012.2", N: "012", E: "012.2", W: "012.2", S: "012.3", U: "012.2", D: "012.2", title: "Mail Nook", desc: "To the east there is an array of wooden cubby holes serving as faculty mailboxes. To the west, there is a door that is slightly ajar and inside you can see Ms. Cordero focusing on an exceptionally large stack of paperwork. The office continues to the north and south.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
 
 locations["principalsOffice"] = {locationID: "012.4", NE: "012.4", NW: "012.4", SE: "012.4", SW: "012.4", N: "012.3", E: "012.4", W: "012.4", S: "012.4", U: "012.4", D: "012.4", title: "Principal’s Office", desc: "East Side High School’s principal, Dr. Mario Santos is here at his desk responding to his email.", width: "30vw", img: "http://i.imgur.com/2dNM0CG.jpg", look: "none"};
 
@@ -1088,7 +1088,7 @@ $(".choicesHolder").on('click', '.choiceOne', function () {
                 $(".choicesHolder").css({visibility: "hidden"});
                 $(".cr").css({visibility: "hidden"});
             } else if(dbt == 0 && ftt == 0 && dtt == 0 && tvt == 0){
-                $(".textBox").append('<h1 class="inBoxText">A token along with an ID Card, you don’t seem to have either.</h1>');
+                $(".textBox").append('<h1 class="inBoxText">You need a token along with an ID Card, you don’t seem to have either.</h1>');
                 $(".choicesHolder").css({visibility: "hidden"});
                 $(".cr").css({visibility: "hidden"});
             } else if(dtt == 1 && tvt == 0){
@@ -2205,7 +2205,7 @@ function commandListSearch(textInput){
                     }
                     
                     if(currentLocation == "012"){
-                        $(".textBox").append('<h1 class="inBoxText">You take a seat.</h1>');
+                        $(".textBox").append('<h1 class="inBoxText">You feel a sudden chill as you take a seat, recollecting the last time you were sent to the principal’s office.</h1>');
                         northMove = false;
                         eastMove = false;
                         westMove = false;
@@ -2224,6 +2224,7 @@ function commandListSearch(textInput){
                 break;
                 return;
         case "stand":
+        case "get up":
         case "stand up":
         case "get off bench":
                 if((currentLocation == "025" || currentLocation == "012") && northMove == false){
@@ -2465,11 +2466,13 @@ function commandListSearch(textInput){
         case "nw":
         case "north west":
         case "go north west":
-                if(nwMove == true && currentLocation !== "000.1"){
+                if(nwMove == true && (currentLocation !== "000.1" || currentLocation !== "012")){
                     northWest();
                 }else if(nwMove == true && currentLocation == "000.1"){
                     fall();
-                };
+                }else if(nwMove == true && currentLocation == "012"){
+                    fall();
+                };;
                 $(".choicesHolder").css({visibility: "hidden"});
                 talkingTo = "noOne";
                 $(".cr").css({visibility: "hidden"});
@@ -2589,6 +2592,15 @@ function commandListSearch(textInput){
                 if(currentLocation == "002"){
                     $(".textBox").append('<h1 class="inBoxText">You ask the elementary school students if you can join in the game, they reluctantly agree. After a few short minutes you get trounced by these little kids… you should be ashamed of yourself.</h1>')
                 }
+                break;
+                return;
+        case "talk":
+                $.each( talkCharacters, function( key, value ) {
+                    if(talkCharacters[key]["locationID"] == currentLocation){
+                        $("input").val("talk to " + talkCharacters[key]["name"]);
+                        talkStart();
+                    }
+                });
                 break;
                 return;
     };
